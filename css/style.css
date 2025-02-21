@@ -49,7 +49,8 @@ html {
     padding-right: 25px;
 }
 
-.line1 {
+.rounded-line {
+    position: relative;
     height: 1px;
     margin-top: 80px;
     margin-bottom: 70px;
@@ -61,17 +62,25 @@ html {
     color: #000000;
 
 }
+.help-container{
+display: flex;
+width: 1426px;
+justify-content: space-between;
+align-items: flex-start;
+}
 
 .help-title {
-    margin: 20px;
-    padding: 30px;
+ padding-bottom: 30px;
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 400;
 }
 
 .help__item {
     padding: 25px;
     border: 1px solid;
     border-color: #000000;
-    border-radius: 12px;
+    border-radius: 25px;
     margin-bottom: 30px;
 }
 
@@ -79,20 +88,125 @@ html {
     padding: 30px;
     border: 1px solid;
     border-color: #000000;
-    border-radius: 12px;
+    border-radius: 25px;
     margin-bottom: 30px;
 
 
 }
 
+.row{
+    align-items: flex-end;
+}
 .help__item2 {
-    padding: 40px;
+    padding: 35px;
     background-color: #1c4c5e;
     color: white;
     border: 1px solid;
     border-color: #1c4c5e;
-    border-radius: 12px;
+    border-radius: 25px;
     margin-bottom: 30px;
+}
+
+/*Questions*/
+.questioncard {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 10px;
+    background: #FFF;
+    border: 1px solid #282828;
+    border-radius: 65px;
+    margin-bottom: 30px;
+
+
+
+}
+
+
+.questioncard>input[type="checkbox"] {
+    display: none;
+}
+
+.questioncard>label {
+    display: block;
+    padding: 5px 0;
+    color: #282828;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 31px;
+
+
+}
+
+.questioncard>label::after,
+.questioncard>label::before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 2px;
+    margin-right: 79px;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+}
+
+.questioncard>label::after {
+    transform: translateY(-50%);
+}
+
+.questioncard>label::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.question__hidden {
+    display: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 33px;
+    padding-bottom: 53px;
+    margin-left: 50px;
+}
+
+.questioncard>input:checked~label::before {
+    display: none;
+}
+
+.questioncard>input:checked~.question__hidden {
+    display: block;
+}
+
+.question-container {
+    margin-bottom: 10px;
+}
+
+.questions {
+    margin-bottom: 100px;
+}
+
+
+.questions {
+    border-radius: 20px;
+    padding-left: 51px;
+    padding-right: 50px;
+    padding-bottom: 79px;
+
+}
+
+.name-question {
+    padding-bottom: 62px;
+    padding-top: 62px;
+    color: #282828;
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 400;
 }
 
 
