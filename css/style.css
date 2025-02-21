@@ -7,6 +7,23 @@
     font-display: swap;
 }
 
+/* ----------- общие ------------ */
+
+html {
+    font-family: "Inria Sans", "Arial", sans-serif;
+    min-width: 320px;
+  }
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+/* ----------- общие ------------ */
+
+
+
 /*2 блок*/
 .hero {
     padding: 100px 0;
@@ -102,6 +119,7 @@ align-items: flex-start;
     margin-bottom: 30px;
 
 
+
 }
 
 
@@ -189,4 +207,126 @@ align-items: flex-start;
     font-size: 64px;
     line-height: 68px;
     font-weight: 400;
+}
+
+
+/* ----------------- footer --------------------- */
+
+footer {
+    background: #4B4B4B;
+    color: white;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.footer__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-footer img {
+    max-width: 373px;
+    max-height: auto;
+}
+
+.footer-info {
+    margin-top: 20px;
+}
+
+.footer-title-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer-title:hover {
+    color: rgb(200, 200, 200);
+}
+
+.footer-contacts-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.footer-contacts {
+    margin-bottom: 20px;
+}
+
+.footer-contacts-title {
+    font-size: 16px;
+}
+
+.messager-link {
+    margin-top: 20px;
+}
+
+.messagers {
+    display: flex;
+    gap: 10px;
+}
+
+.messenger-item img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-botton-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+}
+
+.btn-primary {
+    background-color: #1c4c5e;
+    color: white;
+    border: 1px solid #1c4c5e;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+.policy-link {
+    color: #ffffffcc;
+    text-decoration: none;
+}
+
+.policy-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+        text-align: center;
+    }
 }
