@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('/fonts/subset-InriaSans-Regular.woff2') format('woff2'),
+        url('/fonts/subset-InriaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*2 блок*/
+.hero {
+    padding: 100px 0;
+}
+
+.hero-title {
+    font-size: 70px;
+}
+
+.hero-text {
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.btn-primary {
+    background-color: #1c4c5e;
+    color: white;
+    border: 1px solid;
+    border-color: #1c4c5e;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.line1 {
+    height: 1px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    background-color: grey;
+}
+
+/*3 блок*/
+.help {
+    color: #000000;
+
+}
+
+.help-title {
+    margin: 20px;
+    padding: 30px;
+}
+
+.help__item {
+    padding: 25px;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.help__item--horizontal {
+    padding: 30px;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+
+}
+
+.help__item2 {
+    padding: 40px;
+    background-color: #1c4c5e;
+    color: white;
+    border: 1px solid;
+    border-color: #1c4c5e;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
