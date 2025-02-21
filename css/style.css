@@ -1,3 +1,4 @@
+/* ----------- шрифт ------------ */
 @font-face {
     font-family: 'Inria Sans';
     src: url('/fonts/subset-InriaSans-Regular.woff2') format('woff2'),
@@ -8,55 +9,156 @@
 }
 
 /* ----------- общие ------------ */
-
-html {
-    font-family: "Inria Sans", "Arial", sans-serif;
-    min-width: 320px;
-  }
+body {
+    font-family: 'Inria Sans', sans-serif;
+}
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 20px;
     position: relative;
   }
 
+  h1{
+    font-size: 96px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  h2{
+    font-size: 50px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+  }
 /* ----------- общие ------------ */
 
-
-
-/*2 блок*/
-.hero {
-    padding: 100px 0;
+/* ----------- Header Section ------------ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hero-title {
-    font-size: 70px;
-}
-
-.hero-text {
+.navbar__logo {
     font-size: 24px;
-    margin-bottom: 80px;
+    font-weight: bold;
 }
 
-.btn-primary {
-    background-color: #1c4c5e;
+.navbar__logo-image {
+    width: 150px;
+    height: auto;
+}
+
+.navbar__links {
+    display: flex;
+}
+
+.navbar__link {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar__contact {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__contact-text {
+    color: #000000;
+    margin-right: 20px;
+}
+
+.navbar__socials {
+    display: flex;
+}
+
+.navbar__social-icon {
+    margin-left: 10px;
+}
+
+.navbar__social-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+  .line {
+    display: block; /* Изменено с inline-block на block */
+    width: 70%;
+    height: 1px;
+    background-color: grey;
+    margin: 0 auto; /* Автоматическое выравнивание по центру */
+}
+
+/* ----------- Header Section ------------ */
+
+/* ----------- Hero Section ------------ */
+
+.hero {
+    padding: 80px 0 150px;
+    text-align:left;
+}
+
+.hero__title {
+    margin-bottom: 40px;
+}
+
+.hero__description {
+    margin-bottom: 100px;
+}
+
+.hero__btn {
+    background: #38929C;    
     color: white;
+    cursor: pointer;
     border: 1px solid;
     border-color: #1c4c5e;
     border-radius: 30px;
-    padding: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 15px 25px; /* Упрощено */
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    transition: all 0.3s ease-in-out; /* Переход здесь */
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    background: #295D70;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.295);
 }
 
 .rounded-line {
     position: relative;
     height: 1px;
-    margin-top: 80px;
+    margin-top: 180px;
     margin-bottom: 70px;
     background-color: grey;
 }
 
+/* ----------- Hero Section ------------ */
+
+/* ----------- Help Section ------------ */
 /*3 блок*/
 .help {
     color: #000000;
