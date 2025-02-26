@@ -19,35 +19,33 @@ body {
     padding: 0 20px;
     position: relative;
   }
+section{
+    margin-top: 200px;
+}
 
   h1{
     font-size: 96px;
     font-weight: 400;
-    color: #000000;
   }
 
   h2{
-    font-size: 50px;
+    font-size: 64px;
     font-weight: 400;
-    color: #000000;
   }
 
   h3{
     font-size: 24px;
     font-weight: 400;
-    color: #000000;
   }
 
   h4{
     font-size: 16px;
     font-weight: 400;
-    color: #000000;
   }
 
   p{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    color: #000000;
   }
 /* ----------- общие ------------ */
 
@@ -78,8 +76,26 @@ body {
     margin-left: 30px;
     font-size: 16px;
     font-weight: 400;
+    display: inline-block;
+    outline: none;
+}
+.navbar__link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #295D70;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left center;
 }
 
+.navbar__link:hover::after,
+.navbar__link:focus::after {
+    transform: scaleX(1);
+
+
+}
 .navbar__contact {
     display: flex;
     align-items: center;
@@ -103,6 +119,7 @@ body {
     height: 32px;
 }
 
+
   .line {
     display: block; /* Изменено с inline-block на block */
     width: 70%;
@@ -116,7 +133,7 @@ body {
 /* ----------- Hero Section ------------ */
 
 .hero {
-    padding: 80px 0 150px;
+  /*  padding: 80px 0 150px;*/
     text-align:left;
 }
 
@@ -158,8 +175,8 @@ body {
 
 /* ----------- Hero Section ------------ */
 
+
 /* ----------- Help Section ------------ */
-/*3 блок*/
 .help {
     color: #000000;
 
@@ -196,9 +213,7 @@ align-items: flex-start;
 
 }
 
-.row{
-    align-items: flex-end;
-}
+
 .help__item2 {
     padding: 35px;
     background-color: #1c4c5e;
@@ -209,7 +224,59 @@ align-items: flex-start;
     margin-bottom: 30px;
 }
 
-/*Questions*/
+.help__item-title{
+    margin-bottom: 30px;
+}
+/* ----------- Help Section ------------ */
+
+/*---------------------Search--------------*/
+  
+  .search-title {
+    margin-bottom: 20px;
+  }
+  
+  .search__title-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .search__ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #295D70;
+    color: white;
+  }
+  
+  .search__item {
+    line-height: 1.5;
+
+  }
+/*---------------------Search--------------*/
+
+/*---------------------Why choose--------------*/
+.choose-title{
+    margin-bottom: 60px;
+}
+.choose__item{
+    text-align: center;
+    padding: 22px;
+}
+.choose__item-title{
+    font-weight: bold;
+    margin: 15px;
+}
+.choose__item-title1{
+   margin-top: 30px;
+   margin-bottom: 25px;
+   font-weight: bold;
+}
+/*---------------------Why choose--------------*/
+
+
+/*---------------Questions--------------------*/
+
 .questioncard {
     display: block;
     padding-top: 17px;
@@ -304,13 +371,12 @@ align-items: flex-start;
 
 .name-question {
     padding-bottom: 62px;
-    padding-top: 62px;
     color: #282828;
     font-size: 64px;
     line-height: 68px;
     font-weight: 400;
 }
-
+/*---------------Questions--------------------*/
 
 /* ----------------- footer --------------------- */
 
