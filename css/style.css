@@ -1,8 +1,7 @@
-/* ----------- шрифт ------------ */
 @font-face {
     font-family: 'Inria Sans';
-    src: url('/fonts/subset-InriaSans-Regular.woff2') format('woff2'),
-        url('/fonts/subset-InriaSans-Regular.woff') format('woff');
+    src: url('/Sinodeep/fonts/subset-InriaSans-Regular.woff2') format('woff2'),
+        url('/Sinodeep/fonts/subset-InriaSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,6 +11,7 @@
 body {
     font-family: 'Inria Sans', sans-serif;
 }
+
 
 .container {
     max-width: 1400px;
@@ -124,7 +124,7 @@ section{
     display: block; /* Изменено с inline-block на block */
     width: 70%;
     height: 1px;
-    background-color: grey;
+    background-color: black;
     margin: 0 auto; /* Автоматическое выравнивание по центру */
 }
 
@@ -133,8 +133,10 @@ section{
 /* ----------- Hero Section ------------ */
 
 .hero {
-  /*  padding: 80px 0 150px;*/
     text-align:left;
+    border-bottom: 1px solid black;
+    border-radius: 80px;
+    padding-bottom: 180px;
 }
 
 .hero__title {
@@ -165,21 +167,16 @@ section{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.295);
 }
 
-.rounded-line {
-    position: relative;
-    height: 1px;
-    margin-top: 180px;
-    margin-bottom: 70px;
-    background-color: grey;
-}
-
 /* ----------- Hero Section ------------ */
 
 
 /* ----------- Help Section ------------ */
 .help {
     color: #000000;
-
+    border-top: 1px solid black;
+    border-radius: 80px;
+    padding-top: 100px;
+    margin-top: 50px;
 }
 .help-container{
 display: flex;
@@ -284,11 +281,14 @@ align-items: flex-start;
     border-radius: 10px;
     background: #FFF;
     border: 1px solid #282828;
-    border-radius: 65px;
-    margin-bottom: 30px;
+    border-radius: 80px;
+    margin-bottom: 30px;  
+}
 
-
-
+#questions {
+    border-bottom: 1px solid black;
+    border-radius: 100px;
+    padding-bottom: 250px;
 }
 
 
@@ -357,7 +357,7 @@ align-items: flex-start;
 }
 
 .questions {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -384,7 +384,6 @@ footer {
     background: #4B4B4B;
     color: white;
     padding: 50px 0;
-    margin-top: 100px;
 }
 
 .footer__container {
