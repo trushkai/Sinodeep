@@ -39,30 +39,35 @@
                 <img src="lib/logo.svg" alt="Sinodeep Logo" class="navbar__logo-image">
             </div>
             <div class="navbar__links">
-                <a href="#services" class="navbar__link">
+                <a href="#services" class="navbar__link" data-i18n="services">
                     <h4>Услуги</h4>
                 </a>
-                <a href="#advantages" class="navbar__link">
+                <a href="#advantages" class="navbar__link" data-i18n="advantages">
                     <h4>Преимущества</h4>
                 </a>
-                <a href="#process" class="navbar__link">
+                <a href="#process" class="navbar__link" data-i18n="process">
                     <h4>Процесс работы</h4>
                 </a>
-                <a href="#questions" class="navbar__link">
+                <a href="#questions" class="navbar__link" data-i18n="questions">
                     <h4>Вопросы</h4>
                 </a>
-                <a href="#contact" class="navbar__link">
+                <a href="#contact" class="navbar__link" data-i18n="contacts">
                     <h4>Контакты</h4>
                 </a>
             </div>
-            <div class="navbar__contact">
-                <span class="navbar__contact-text">
-                    <p>Напишите нам,<br> мы всегда онлайн</p>
-                </span>
-                <div class="navbar__socials">
-                    <a href="#" class="navbar__social-icon"><img src="lib/vkontacteBlack.svg" alt="Vkontakte"></a>
-                    <a href="#" class="navbar__social-icon"><img src="lib/telegramBlack.svg" alt="Telegram"></a>
-                    <a href="#" class="navbar__social-icon"><img src="lib/whatsappBlack.svg" alt="WhatsApp"></a>
+            <div class="navbar__right">
+                <div class="navbar__contact">
+                    <span class="navbar__contact-text" data-i18n="contact-text">
+                        <p>Напишите нам,<br> мы всегда онлайн</p>
+                    </span>
+                    <div class="navbar__socials">
+                        <a href="#" class="navbar__social-icon"><img src="lib/vkontacteBlack.svg" alt="Vkontakte"></a>
+                        <a href="#" class="navbar__social-icon"><img src="lib/telegramBlack.svg" alt="Telegram"></a>
+                        <a href="#" class="navbar__social-icon"><img src="lib/whatsappBlack.svg" alt="WhatsApp"></a>
+                    </div>
+                    <button class="language-switcher" aria-label="Switch language">
+                        <img src="/Sinodeep/lib/ruen.svg" alt="Русский" class="language-icon" id="language-icon">
+                    </button>
                 </div>
             </div>
         </div>
@@ -74,10 +79,29 @@
         <section id="hero" class="hero">            
             <div class="container hero__wrapper">
                 <div class="hero__content">
+                    <div class="cubes-grid">
+                        <div class="cube cube-1">
+                            <div class="image-wrapper-cube">
+                                <img src="lib/hero/1.svg" alt="Производство" class="cube-image">
+                            </div>
+                        </div>
+                        <div class="cube cube-2">
+                            <div class="image-wrapper">
+                                <img src="lib/hero/2.svg" alt="Логистика" class="cube-image">
+                            </div>
+                        </div>
+                        <div class="cube cube-3">
+                            <div class="image-wrapper">
+                                <img src="lib/hero/3.svg" alt="Контроль" class="cube-image">
+                            </div>
+                        </div>
+                    </div>
                     <h1 class="hero__title">Открываем Китай<br> для вашего бизнеса</h1>
-                    <h3 class="hero__description">Мы не просто компания, мы — ваш партнёр,<br> который заботится о вас
-                        на каждом шаге</h3>
+                    <h3 class="hero__description">Мы не просто компания, мы — ваш партнёр,<br> который заботится о вас на каждом шаге</h3>
                     <a href="#contact" class="hero__btn">Получите бесплатную консультацию</a>
+                    
+                    
+                    
                 </div>
             </div>
         </section>
@@ -206,71 +230,67 @@
         </section>
 
         <!-- Partners Section -->
-        <section id="partners" class="pertners">
+        <section id="partners" class="partners">
             <div class="container container_partners">
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/alfa-m.svg" alt="Альфа-М" class="partner-image">
-                        </div>
+                <div class="partners-track">
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/alfa-m.svg" alt="Альфа-М" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/first_hardware.svg" alt="First Hardware" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/techno_vector.svg" alt="Techno Vector" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/moscow_government.svg" alt="Московское правительство" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/tm_pz.svg" alt="TM PZ" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/kamaz.svg" alt="КАМАЗ" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/tatneft.svg" alt="Татнефть" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/rostselmash.svg" alt="Ростсельмаш" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/height.svg" alt="Height" class="partner-image">
+                    </div>
+
+                    <!-- Дублирующий набор для бесшовной анимации -->
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/alfa-m.svg" alt="Альфа-М" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/first_hardware.svg" alt="First Hardware" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/techno_vector.svg" alt="Techno Vector" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/moscow_government.svg" alt="Московское правительство" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/tm_pz.svg" alt="TM PZ" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/kamaz.svg" alt="КАМАЗ" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/tatneft.svg" alt="Татнефть" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/rostselmash.svg" alt="Ростсельмаш" class="partner-image">
+                    </div>
+                    <div class="partner-card">
+                        <img src="/Sinodeep/lib/partners/height.svg" alt="Height" class="partner-image">
                     </div>
                 </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/first_hardware.svg" alt="First Hardware" class="partner-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/techno_vector.svg" alt="Techno Vector" class="partner-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/moscow_government.svg" alt="Московское правительство" class="partner-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/tm_pz.svg" alt="TM PZ" class="partner-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/kamaz.svg" alt="КАМАЗ" class="partner-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/tatneft.svg" alt="Татнефть" class="partner-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/rostselmash.svg" alt="Ростсельмаш" class="partner-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="partner-card">
-                    <div class="card-3d">
-                        <div class="card-face">
-                            <img src="/Sinodeep/lib/partners/height.svg" alt="Height" class="partner-image">
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
 
