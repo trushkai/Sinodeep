@@ -50,3 +50,39 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.querySelector('.language-switcher').addEventListener('click', switchLanguage);
 });
+
+//form
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    const checkbox = this.querySelector('input[name="agreement"]');
+    const inputs = this.querySelectorAll('input, textarea');
+    
+    // Проверка заполнения всех полей
+    let isValid = true;
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            input.classList.add('invalid');
+            isValid = false;
+        }
+    });
+    
+    // Проверка чекбокса
+    if (!checkbox.checked) {
+        checkbox.closest('.agreement').classList.add('invalid');
+        isValid = false;
+    }
+    
+    if (!isValid) {
+        e.preventDefault();
+        alert('Пожалуйста, заполните все поля и подтвердите соглашение');
+    }
+});
+
+// Добавляем обработчики для сброса стилей ошибок
+document.querySelectorAll('input, textarea').forEach(el => {
+    el.addEventListener('input', () => {
+        el.classList.remove('invalid');
+        if(el.name === 'agreement') {
+            el.closest('.agreement').classList.remove('invalid');
+        }
+    });
+});
