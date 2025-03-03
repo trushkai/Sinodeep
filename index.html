@@ -228,15 +228,83 @@
             </div>
         </section>
 
+        <!-- How we work Section -->
+        <section id="workPlan" class="workPlan">
+            <div class="container workPlan__wrapper">
+                <div class="workPlan__container">
+                    <h2 class="workPlan__title">Как мы работаем</h2>
+                    <div class="process-roadmap-top">
+                        <div class="process-item process1">
+                            <div class="process-step">
+                                <div class="step-number">1.</div>
+                                <div class="step-content">
+                                    <h3>Консультация,<br>поиск товара</h3>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="process-item process3">
+                            <div class="process-step">
+                                <div class="step-number">3.</div>
+                                <div class="step-content">
+                                    <h3>Заключение<br>договора</h3>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="process-item process5">
+                            <div class="process-step">
+                                <div class="step-number">5.</div>
+                                <div class="step-content">
+                                    <h3>Отправка в путь</h3>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="process-item process7">
+                            <div class="process-step">
+                                <div class="step-number">7.</div>
+                                <div class="step-content">
+                                    <h3>Прибытие<br>товара!</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-roadmap-botton">
+                        <div class="process-item process2">
+                            <div class="process-step">
+                                <div class="step-number">2.</div>
+                                <div class="step-content">
+                                    <h3>Выбор подходящего<br>завода</h3>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="process-item process4">
+                            <div class="process-step">
+                                <div class="step-number">4.</div>
+                                <div class="step-content">
+                                    <h3>Проверка и<br>сбор товара</h3>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="process-item process6">
+                            <div class="process-step">
+                                <div class="step-number">6.</div>
+                                <div class="step-content">
+                                    <h3>Таможенное<br>оформление</h3>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Form Section -->
         <section id="form" class="form">
             <div class="container form__wrapper">
                 <div class="form__content">
-                    <h2 class="form__title">Мы готовы помочь<br>вашему бизнесу!</h2>
-                    <h3 class="form__subtitle">Расскажите нам о своих логистических задачах, и мы<br>подберем для вас оптимальное решение, учитывая все<br>ваши потребности.</h3>
-                    
                     <div class="form__container">
                         <div class="form__contacts">
+                            <h2 class="form__title">Мы готовы помочь<br>вашему бизнесу!</h2>
+                            <h3 class="form__subtitle">Расскажите нам о своих логистических задачах, и мы<br>подберем для вас оптимальное решение, учитывая все<br>ваши потребности.</h3>
                             <h3 class="contacts__title">Задайте вопрос в мессенджер</h3>
                             <div class="messengers">
                                 <a href="#" class="messenger-item">
@@ -251,30 +319,34 @@
                             </div>
                         </div>
         
-                        <form class="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <input type="text" id="name" name="name" required>
-                                    <label for="name">Как к вам обращаться?</label>
-                                </div>
-                            </div>                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <input type="email" id="email" name="email" required>
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" id="phone" name="phone" required>
-                                    <label for="phone">Мессенджер для связи (WhatsApp, Telegram)</label>
-                                </div>
-                            </div>
-        
+                        <form class="contact-form" novalidate>
                             <div class="form-group">
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                                <label for="message">Опишите задачу</label>
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Как к вам обращаться?</label>
                             </div>
-        
-                            <button type="submit" class="submit-btn">Отправить</button>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email</label>
+                            </div>                     
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" required placeholder=" ">
+                                <label for="phone">Мессенджер для связи (WhatsApp, Telegram)</label>
+                            </div>   
+                            <div id="describe-task" class="form-group">
+                                <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Опишите задачу</label>
+                                <p class="form-task-text">Опишите задачу, которую хотите нам поручить. Специалист подготовится к разговору и<br>предложит решение.</p>
+                            </div>       
+                            <div class="form-row">
+                                <button type="submit" class="submit-btn">Отправить</button>
+                                <div class="agreement">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" required class="checkbox-input" name="agreement" placeholder=" ">
+                                        <span class="checkmark"></span>                                         
+                                        <span class="agreement-text">Нажимая на кнопку, вы соглашаетесь с правилами обработки<br>персональных данных и политикой конфиденциальности</span>
+                                    </label>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
