@@ -60,7 +60,6 @@
                     <span class="navbar__contact-text" data-i18n="contact-text">
                         <p>Напишите нам,<br> мы всегда онлайн</p>
                     </span>
-                    <div class="navbar__socials">
                         <a href="#" class="navbar__social-icon"><img src="lib/vkontacteBlack.svg" alt="Vkontakte"></a>
                         <a href="#" class="navbar__social-icon"><img src="lib/telegramBlack.svg" alt="Telegram"></a>
                         <a href="#" class="navbar__social-icon"><img src="lib/whatsappBlack.svg" alt="WhatsApp"></a>
@@ -229,9 +228,63 @@
             </div>
         </section>
 
+        <!-- Form Section -->
+        <section id="form" class="form">
+            <div class="container form__wrapper">
+                <div class="form__content">
+                    <h2 class="form__title">Мы готовы помочь<br>вашему бизнесу!</h2>
+                    <h3 class="form__subtitle">Расскажите нам о своих логистических задачах, и мы<br>подберем для вас оптимальное решение, учитывая все<br>ваши потребности.</h3>
+                    
+                    <div class="form__container">
+                        <div class="form__contacts">
+                            <h3 class="contacts__title">Задайте вопрос в мессенджер</h3>
+                            <div class="messengers">
+                                <a href="#" class="messenger-item">
+                                    <img src="/Sinodeep/lib/vkontacteBlue.svg" alt="Vkontakte">
+                                </a>
+                                <a href="#" class="messenger-item">
+                                    <img src="/Sinodeep/lib/telegramBlue.svg" alt="Telegram">
+                                </a>
+                                <a href="#" class="messenger-item">
+                                    <img src="/Sinodeep/lib/whatsappBlue.svg" alt="WhatsApp">
+                                </a>
+                            </div>
+                        </div>
+        
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name">Как к вам обращаться?</label>
+                                </div>
+                            </div>                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <label for="phone">Мессенджер для связи (WhatsApp, Telegram)</label>
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                                <label for="message">Опишите задачу</label>
+                            </div>
+        
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Partners Section -->
         <section id="partners" class="partners">
             <div class="container container_partners">
+                <h2 class="partners__title">Наши партнеры</h2>
                 <div class="partners-track">
                     <div class="partner-card">
                         <img src="/Sinodeep/lib/partners/alfa-m.svg" alt="Альфа-М" class="partner-image">
