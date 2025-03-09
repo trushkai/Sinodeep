@@ -17,8 +17,9 @@ body {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
   }
 section{
     margin-top: 180px;
@@ -176,7 +177,7 @@ section{
 }
 
 .hero__btn {
-    background: #38929C;    
+    background: #295D70;    
     color: white;
     cursor: pointer;
     border: 1px solid;
@@ -191,7 +192,7 @@ section{
 
 .hero__btn:hover,
 .hero__btn:focus {
-    background: #295D70;
+    background: #38929C;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.295);
 }
 
@@ -240,7 +241,7 @@ section{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(80%) brightness(0.7);
+    filter: grayscale(100%) brightness(0.7);
     transition: all 0.3s ease;
 }
 
@@ -330,31 +331,371 @@ align-items: flex-start;
 }
 /* ----------- Help Section ------------ */
 
-/*---------------------Search--------------*/
-  
-  .search-title {
-    margin-bottom: 20px;
-  }
-  
-  .search__title-text {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .search__ol {
-    list-style-type: decimal;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    background-color: #295D70;
-    color: white;
-  }
-  
-  .search__item {
-    line-height: 1.5;
+/*---------------------Extra help--------------*/
 
-  }
-/*---------------------Search--------------*/
+.extra--help__title {
+    margin-bottom: 60px;
+}
+
+.extra--help-cards {
+    position: relative;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    column-gap: 70px;
+    row-gap: 30px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.extra--help-card{
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+.extra--help-card:focus,
+.extra--help-card:hover {
+    transform: translateY(-1px);
+}
+
+.extra--help-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.extra--help-card1, .extra--help-card2, .extra--help-card3, .extra--help-card4 {
+    width: auto !important;
+}
+
+.extra--help-card1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;  
+    height: 186px;
+}
+.extra--help-card2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+    height: 186px;
+}
+.extra--help-card3{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3; 
+    height: 148px;
+}
+.extra--help-card4{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    border: none;
+}
+
+.extra_image{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 25px;
+    filter: grayscale(100%) brightness(0.7);
+    transition: all 0.3s ease;
+}
+
+.extra--help-card:hover .extra_image {
+filter: grayscale(0%) brightness(1);
+}
+
+.extra--help-content-subtitle{
+    padding: 30px;
+}
+
+.extra--help-content-text{
+    padding: 0 20px;
+}
+
+/*---------------------Extra help--------------*/
+
+/*---------------------Quality description--------------*/
+.solution-dev{
+    background-image: url("/Sinodeep/lib/dev-lines.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 460px;    
+    margin-top: 450px;
+    padding-top: 1px;
+}
+
+
+.solution-dev__title{
+    margin-bottom: 40px;
+    margin-top: -240px;
+}
+
+.solution-dev__subtitle{
+    margin-bottom: 60px;
+}
+
+.solution-dev-list{
+    list-style: none;
+    counter-reset: list; 
+    padding-left: 0;
+}
+
+.solution-dev-list li{
+    display: flex;
+    align-items: center;
+    counter-increment: list;
+    position: relative;
+    padding-left: 50px; 
+    margin-top: 130px;
+}
+
+.solution-dev-list li::before{
+    content: counter(list);
+    position: absolute;
+    left: 0;
+    
+}
+
+.dev-sublist_number {
+    padding-left: 10px;
+    font-size: 64px;
+    color: white;
+}
+/*---------------------Quality description--------------*/
+
+/*---------------------Quality description--------------*/
+
+.quality-description__title{
+    margin-bottom: 50px;
+}
+
+.quality-description__subtitle{
+    margin-bottom: 50px;
+}
+.quality-row-text{
+    position: relative;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.quality-row{
+    flex: 1;
+    max-width: 600px;
+    margin-right: 70px;
+    height: 76px;
+    background-color: #295D70;
+    border-radius: 50px;
+}
+
+.quality-text{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+/*---------------------Quality description--------------*/
+
+/*---------------------Job description--------------*/
+.job-description{
+    margin-bottom: 250px;
+}
+
+.job-description-image{
+    position: absolute;
+    right: 0;
+}
+
+.job-description__title{
+    margin-bottom: 40px;
+}
+
+.job-description__subtitle{
+    margin-bottom: 60px;
+}
+
+.job-description-links{
+    padding-left: 300px;
+    max-width: 1170px;
+}
+
+.job-description__link{
+    padding-bottom: 10px;
+    line-height: 1.5
+}
+
+.job-description-text{
+    margin-bottom: 35px;
+}
+
+.job-description-list{
+    list-style: none;
+    counter-reset: list; 
+    padding-left: 0;
+}
+
+.job-description-list li{
+    display: flex;
+    align-items: center;
+    counter-increment: list;
+    position: relative;
+    padding-left: 50px; 
+    margin-top: 30px;
+}
+
+.job-description-list li::before{
+    content: counter(list);
+    position: absolute;
+    left: 0;
+}
+
+.sublist_number {
+    padding-left: 10px;
+    font-size: 64px;
+}
+/*---------------------Job description--------------*/
+
+/*---------------------Financial Operation--------------*/
+.fin-operation{
+    background-image: url("/Sinodeep/lib/waveCurve.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1050px;    
+    margin-top: 100px;
+}
+
+.fin-operation__container{
+    padding-top: 250px;
+    color: white;
+}
+
+.fin-operation__title{
+    margin-bottom: 40px;
+}
+
+.fin-operation__subtitle{
+    margin-bottom: 130px;
+}
+
+.operation-links{
+    padding-left: 300px;
+    max-width: 1170px;
+}
+
+.operation__link{
+    padding-bottom: 10px;
+    line-height: 1.5
+}
+/*---------------------Financial Operation--------------*/
+
+/*---------------------Logistics--------------*/
+.logistics__title {
+    margin-bottom: 60px;
+}
+
+.logistics__subtitle{
+    margin-bottom: 60px;
+}
+
+.logic-cards {
+    position: relative;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 413px 214px 497px;
+    gap: 25px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logic-card{
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+.logic-card:focus,
+.logic-card:hover {
+    transform: translateY(-1px);
+}
+
+.logic-content-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    height: 100%;
+}
+
+.logic-content-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.logic-card1, .logic-card2, .logic-card3, .logic-card4, .logic-card5 {
+    width: auto !important;
+}
+
+.logic-card1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;  
+    height: 413px;
+}
+.logic-card2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+    height: 413px;
+}
+.logic-card3{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3; 
+    height: 214px;
+}
+.logic-card4{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 497px;
+}
+.logic-card5{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: 497px;
+}
+
+.logic_image{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 25px;
+    filter: grayscale(100%) brightness(0.7);
+    transition: all 0.3s ease;
+}
+
+.logic-card:hover .logic_image {
+filter: grayscale(0%) brightness(1);
+}
+
+.logic-content-text{
+    padding: 20px;
+}
+
+.logistics-delivery-text{
+    margin-bottom: 25px;
+}
+
+.sublist {
+    padding-left: 30px;
+    margin-top: 10px;
+    list-style-type: disc;   
+}
+/*---------------------Logistics--------------*/
 
 /*---------------------Why choose--------------*/
 .choose-title{
