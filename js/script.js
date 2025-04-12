@@ -1,36 +1,21 @@
 document.getElementById("language-switcher").addEventListener("click", function() {
-    // const currentPath = window.location.pathname;
-    // let newPath = '';
+    const currentPath = window.location.pathname;
+    let newPath = '';
 
-    // // Если текущий URL начинается с /ru, переключаем на /en
-    // if (currentPath.startsWith('/ru')) {
-    //   newPath = currentPath.replace('/ru', '/en');
-    // } 
-    // // Если URL начинается с /en, переключаем на /ru
-    // else if (currentPath.startsWith('/en')) {
-    //   newPath = currentPath.replace('/en', '/ru');
-    // } 
-    // // Если нет – можно задать язык по умолчанию, например, /en
-    // else {
-    //   newPath = '/en';
-    // }
+    // Если текущий URL начинается с /ru, переключаем на /en
+    if (currentPath.startsWith('/ru')) {
+      newPath = currentPath.replace('/ru', '/en');
+    } 
+    // Если URL начинается с /en, переключаем на /ru
+    else if (currentPath.startsWith('/en')) {
+      newPath = currentPath.replace('/en', '/ru');
+    } 
+    // Если нет – можно задать язык по умолчанию, например, /en
+    else {
+      newPath = '/en';
+    }
     
-    // window.location.href = newPath;
-
-    const repo = '/Sinodeep';                    // имя вашего репозитория
-  const path = window.location.pathname.replace(repo, '');
-
-  let newPath;
-  if (path.startsWith('/ru')) {
-    newPath = `${repo}${path.replace('/ru', '/en')}`;
-  } else if (path.startsWith('/en')) {
-    newPath = `${repo}${path.replace('/en', '/ru')}`;
-  } else {
-    newPath = `${repo}/ru/`;
-  }
-
-  window.location.href = newPath;
-
+    window.location.href = newPath;
 });
 
 //form
