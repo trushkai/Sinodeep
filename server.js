@@ -14,3 +14,7 @@ app.get('/', (req, res) => {
   res.redirect('/ru');
 });
 
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Сервер запущен на порту ${port}`);
+});
