@@ -1,18 +1,19 @@
 document.getElementById("language-switcher").addEventListener("click", function() {
     const currentPath = window.location.pathname;
+    const repo = '/Sinodeep';  
     let newPath = '';
 
     // Если текущий URL начинается с /ru, переключаем на /en
     if (currentPath.startsWith('/ru')) {
-      newPath = currentPath.replace('/ru', '/en');
+      newPath = `${repo}${path.replace('/ru', '/en')}`;
     } 
     // Если URL начинается с /en, переключаем на /ru
     else if (currentPath.startsWith('/en')) {
-      newPath = currentPath.replace('/en', '/ru');
+      newPath = `${repo}${path.replace('/en', '/ru')}`;
     } 
     // Если нет – можно задать язык по умолчанию, например, /en
     else {
-      newPath = '/en';
+      newPath = `${repo}/en/`;
     }
     
     window.location.href = newPath;

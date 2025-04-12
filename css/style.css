@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Inria Sans';
-    src: url('/fonts/subset-InriaSans-Regular.woff2') format('woff2'),
-        url('/fonts/subset-InriaSans-Regular.woff') format('woff');
+    src: url('../fonts/subset-InriaSans-Regular.woff2') format('woff2'),
+        url('../fonts/subset-InriaSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -657,7 +657,7 @@ p {
 
 /*---------------------Solution Dev--------------*/
 .solution-dev {
-    background-image: url("/lib/dev-lines.svg");
+    background-image: url("../lib/dev-lines.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -902,7 +902,7 @@ aspect-ratio: 1/1;
 
 /*---------------------Financial Operation--------------*/
 .fin-operation {
-    background-image: url("/lib/waveCurve.svg");
+    background-image: url("../lib/waveCurve.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -1162,7 +1162,7 @@ aspect-ratio: 1/1;
 
 /* ----------- How we work Section ------------ */
 .workPlan {
-    background-image: url("/lib/roadCar.svg");
+    background-image: url("../lib/roadCar.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -1268,7 +1268,7 @@ aspect-ratio: 1/1;
 
 /* ----------- Form Section ------------ */
 .form {
-    background-image: url("/lib/waveCurve.svg");
+    background-image: url("../lib/waveCurve.svg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
