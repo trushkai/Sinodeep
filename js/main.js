@@ -71,3 +71,23 @@ accordionQuestions.forEach((accordionQuestion) => {
     }
   });
 });
+
+//fix
+const fixButtons = document.querySelectorAll(".fix-btn");
+
+fixButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // Предполагаем, что .fix-info находится сразу после кнопки
+    const infoBlock = button.nextElementSibling;
+
+    if(infoBlock) {
+      // Если элемент уже видим, убираем класс, иначе — добавляем
+      infoBlock.classList.toggle("fix-info--visible");
+
+      // Можно также переключить состояние кнопки, если это нужно
+      button.classList.toggle("fix-btn--active");
+    }
+  });
+});

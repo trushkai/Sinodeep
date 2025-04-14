@@ -117,6 +117,75 @@ p {
 
 /* ----------- общие ------------ */
 
+/* ----------- фиксированные кнопки ------------ */
+
+
+
+.fix-btn{
+    position: fixed;
+    bottom: 120px;
+    right: 150px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+.fix-btn:hover,
+.fix-btn:focus {
+    transform: scale(1.1);
+}
+
+.fix-title{
+    margin: 0 10px;
+    margin-left: 20px;
+}
+
+.fix-info {
+    position: fixed;
+    bottom: 30px;
+    right: 150px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+.fix-messengers-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.fix-messenger-link img {
+    transition: transform 0.3s;
+}
+.fix-messenger-link img:hover,
+.fix-messenger-link img:focus {
+    transform: scale(1.03);
+}
+
+.fix-btn::after {
+    content: '';
+}
+
+.fix-info--visible {
+    opacity: 1;
+}
+
+
+/* ----------- фиксированные кнопки ------------ */
+
 /* ----------- Header Section ------------ */
 
 .navbar {
@@ -1527,7 +1596,7 @@ aspect-ratio: 1/1;
 
 .partners-track {
     display: inline-flex;
-    animation: scroll 30s linear infinite;
+    animation: partner-scroll 30s linear infinite;
     white-space: nowrap;
     padding: 20px 0;
 }
@@ -1553,7 +1622,7 @@ aspect-ratio: 1/1;
     padding: 7px 50px;
 }
 
-@keyframes scroll {
+@keyframes partner-scroll {
     0% {
         transform: translateX(0);
     }
