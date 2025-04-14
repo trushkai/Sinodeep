@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <base href="/Sinodeep/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sinodeep</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <script defer src="../js/script.js"></script>
+    <script defer src="../js/main.js" defer></script>
     <script defer src="../server.js"></script>
 
     <meta name="keywords" content="sinodeep, Sinodeep">
@@ -39,32 +38,32 @@
     <header class="header">
         <div class="container navbar">
             <div class="navbar__logo">
-                <img src="../lib/logo.svg" alt="Sinodeep Logo" class="navbar__logo-image">
+                <img src="../lib/header/logo.svg" alt="Sinodeep Logo" class="navbar__logo-image">
             </div>
             <div class="navbar__links">
                 <a href="#portfolio" class="navbar__link" data-i18n="files">
-                    <h4>Портфолио</h4>
+                    <h4>Portfolio</h4>
                 </a>
                 <a href="#services" class="navbar__link" data-i18n="services">
-                    <h4>Услуги</h4>
+                    <h4>Services</h4>
                 </a>
                 <a href="#advantages" class="navbar__link" data-i18n="advantages">
-                    <h4>Преимущества</h4>
+                    <h4>Advantages</h4>
                 </a>
                 <a href="#process" class="navbar__link" data-i18n="process">
-                    <h4>Процесс работы</h4>
+                    <h4>Work process</h4>
                 </a>
                 <a href="#questions" class="navbar__link" data-i18n="questions">
-                    <h4>Вопросы</h4>
+                    <h4>Questions</h4>
                 </a>
                 <a href="#contacts" class="navbar__link" data-i18n="contacts">
-                    <h4>Контакты</h4>
+                    <h4>Contacts</h4>
                 </a>
             </div>
             <div class="navbar__right">
-                <button id="language-switcher" class="language-switcher" aria-label="Switch language">
-                    <img src="../lib/ruen.svg" alt="Русский" class="language-icon" id="language-icon">
-                </button>
+                <a id="language-switcher" class="language-switcher" aria-label="Switch language" href="../ru/index.html">
+                    <img src="../lib/header/enru.svg" alt="Русский" class="language-icon" id="language-icon">
+                </a>
             </div>
             <button class="burger-btn burger">
                 <span class="burger-line"></span>
@@ -74,7 +73,6 @@
         </div>
         <span class="line"></span>
     </header>
-
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
@@ -83,24 +81,24 @@
                     <div class="cubes-grid">
                         <div class="cube cube-1">
                             <div class="image-wrapper-cube">
-                                <img src="../lib/hero/1.svg" alt="Производство" class="cube-image">
+                                <img src="../lib/hero/cube1.svg" alt="Производство" class="cube-image">
                             </div>
                         </div>
                         <div class="cube cube-2">
                             <div class="image-wrapper">
-                                <img src="../lib/hero/2.svg" alt="Логистика" class="cube-image">
+                                <img src="../lib/hero/cube2.svg" alt="Логистика" class="cube-image">
                             </div>
                         </div>
                         <div class="cube cube-3">
                             <div class="image-wrapper">
-                                <img src="../lib/hero/3.svg" alt="Контроль" class="cube-image">
+                                <img src="../lib/hero/cube3.svg" alt="Контроль" class="cube-image">
                             </div>
                         </div>
                     </div>
-                    <h1 class="hero__title">Открываемм Китай<br> для вашего бизнеса</h1>
-                    <h3 class="hero__description">Мы не просто компания, мы – Ваш партнер, <br>который заботится о вас
-                        на каждом шаге</h3>
-                    <a href="#contact" class="hero__btn">Получить бесплатную консультацию</a>
+                    <h1 class="hero__title">Opening China<br> for your business</h1>
+                    <h3 class="hero__description">We are not just a company, we are your partner, <br>who cares about you at every step</h3>
+                    <a href="#contact" class="hero__btn">Get a free consultation
+                    </a>
                 </div>
             </div>
         </section>
@@ -108,44 +106,38 @@
         <!-- Help Section -->
         <section id="services" class="help">
             <div class="container help__wrapper">
-                <h2 class="help-title">Вот как мы можем Вам помочь:</h2>
+                <h2 class="help-title">Here's how we can help you:</h2>
                 <div class="services-flex">
                     <div class="service-card">
-                        <h3 class="help__item-title">Откроем для Вас двери <br>заводов</h3>
-                        <p class="help__item-text">Найдем для Вас надежных <br>производителей в Китае, чтобы Вы
-                            <br>сотрудничали только с лучшими.</p>
+                        <h3 class="help__item-title">We will open the doors of <br>factories for you</h3>
+                        <p class="help__item-text">We will find reliable <br>manufacturers in China for you so that you cooperate only with the best.</p>
                     </div>
                     <div class="service-card">
-                        <h3 class="help__item-title">Китай станет ближе</h3>
-                        <p class="help__item-text">Организуем Ваше сопровождение <br>по Китаю, включая поездки на
-                            <br>производства и выставки, чтобы <br>Вы лично убедились в качестве <br>продукции.</p>
+                        <h3 class="help__item-title">China will get closer</h3>
+                        <p class="help__item-text">We will organize your support <br>around China, including trips to <br>manufacturing facilities and exhibitions, so that <br>you can personally see the quality of the <br>products.
+                        </p>
                     </div>
                     <div class="service-card highlighted">
-                        <h3 class="help__item-title">Оплата без границ</h3>
-                        <p class="help__item-text">Позаботимся о безопасной <br>и простой оплате Вашим <br>поставщикам в
-                            Китае, <br>минуя любые сложности.</p>
+                        <h3 class="help__item-title">Payment without borders</h3>
+                        <p class="help__item-text">We will take care of safe <br>and easy payment to your <br>suppliers in China, <br>avoiding any complications.</p>
                     </div>
                     <div class="service-card">
-                        <h3 class="help__item-title">Ищем то, что нужно <br>именно Вам</h3>
-                        <p class="help__item-text">Позаботимся о безопасной и <br>простой оплате Вашим поставщикам <br>в
-                            Китае, минуя любые сложности.</p>
+                        <h3 class="help__item-title">We are looking for what you need <br>exactly</h3>
+                        <p class="help__item-text">We will take care of safe and <br>simple payment to your suppliers <br>in China, avoiding any complications.</p>
                     </div>
                 </div>
                 <div class="services-flex">
                     <div class="service-card highlighted">
-                        <h3 class="help__item-title">Лично контролируем качество</h3>
-                        <p class="help__item-text">Наши специалисты выезжают прямо на <br>фабрику, чтобы лично проверить
-                            качество <br>продукции. Мы убедимся, что товар <br>соответствует Вашим требованиям.</p>
+                        <h3 class="help__item-title">We personally control the quality</h3>
+                        <p class="help__item-text">Our specialists go directly to the <br>factory to personally check the <br>quality of the products. We will make sure that the goods <br>meet your requirements.</p>
                     </div>
                     <div class="service-card">
-                        <h3 class="help__item-title">Переведем с китайского на Ваш язык</h3>
-                        <p class="help__item-text">Команда профессиональных переводчиков поможет <br>Вам с любыми
-                            языковыми барьерами и обеспечит <br>комфортное общение.</p>
+                        <h3 class="help__item-title">We will translate from Chinese into your language</h3>
+                        <p class="help__item-text">A team of professional translators will help <br>You with any language barriers and ensure <br>comfortable communication.</p>
                     </div>
                     <div class="service-card">
-                        <h3 class="help__item-title">Найдем самый короткий путь</h3>
-                        <p class="help__item-text">Специалисты подберут для Вас оптимальный <br>логистический маршрут,
-                            чтобы В аши товары <br>прибыли вовремя и с минимальными затратами.</p>
+                        <h3 class="help__item-title">Let's find the shortest path</h3>
+                        <p class="help__item-text">Specialists will select the optimal <br>logistics route for you so that your goods <br>arrive on time and with minimal costs.</p>
                     </div>
                 </div>
             </div>
@@ -182,7 +174,7 @@
                             </div>
                         </div>
                         <div class="extra--help-card extra--help-card4">
-                            <img class="extra_image" src="../lib/extraHelp.svg" alt="storage">
+                            <img class="extra_image" src="../lib/extraHelp/extraHelp.svg" alt="storage">
                         </div>
                     </div>
                 </div>
@@ -249,7 +241,7 @@
             <div class="container job-description__wrapper">
                 <div class="job-description__container">
                     <div>
-                        <img class="job-description-image" src="../lib/jobDescription.png" alt="job-description">
+                        <img class="job-description-image" src="../lib/jobDescription/jobDescription.png" alt="job-description">
                     </div>
                     <div class="job-description__block">
                         <h2 class="job-description__title">Ваш прямой доступ к лучшим <br>производителям Китая</h2>
@@ -359,7 +351,7 @@
                     <h2 class="portfolio__title">Более 10 лет на службе вашего экспорта</h2>
                     <div class="portfolio-cards">
                         <div class="portfolio-card portfolio-card1">
-                            <img class="director-img" src="../lib/director.svg" alt="Директор-Андрей">
+                            <img class="director-img" src="../lib/portfolio/director.svg" alt="Директор-Андрей">
                         </div>
                         <div class="portfolio-card portfolio-card2">
                             <h3 class="portfolio-content-text">Меня зовут Андрей, я являюсь генеральным директором
@@ -389,7 +381,7 @@
                     <div class="col-lg-3">
                         <div class="choose__item">
                             <div>
-                                <img class="why-img" src="../img/why1.png" alt="человек одобряет">
+                                <img class="why-img" src="../lib/advantages/why1.png" alt="человек одобряет">
                             </div>
                             <h3 class="choose__item-title">Комплексные решения:</h3>
                             <p class="choose__item-text">Поможем Вам на каждом этапе – от поиска товара до его доставки
@@ -399,7 +391,7 @@
                     <div class="col-lg-3">
                         <div class="choose__item">
                             <div>
-                                <img class="why-img" src="../img/why2.png" alt="пазл">
+                                <img class="why-img" src="../lib/advantages/why2.png" alt="пазл">
                             </div>
                             <h3 class="choose__item-title1">Опыт и знания:</h3>
                             <p class="choose__item-text">Знаем рынок Китая, как свои пять пальцев, и готовы поделиться
@@ -409,7 +401,7 @@
                     <div class="col-lg-3">
                         <div class="choose__item">
                             <div>
-                                <img class="why-img" src="../img/why3.png" alt="книга с лампочкой">
+                                <img class="why-img" src="../lib/advantages/why3.png" alt="книга с лампочкой">
                             </div>
                             <h3 class="choose__item-title">Надежность и прозрачность:</h3>
                             <p class="choose__item-text">Для нас важны честность и открытость на каждом этапе
@@ -419,7 +411,7 @@
                     <div class="col-lg-3">
                         <div class="choose__item">
                             <div>
-                                <img class="why-img" src="../img/why4.png" alt="одобрено">
+                                <img class="why-img" src="../lib/advantages/why4.png" alt="одобрено">
                             </div>
                             <h3 class="choose__item-title">Персональный подход:</h3>
                             <p class="choose__item-text">Работаем как партнеры и адаптируем наши услуги под Ваши
@@ -510,16 +502,16 @@
                             <h3 class="contacts__title">Задайте вопрос в мессенджер</h3>
                             <div class="messengers">
                                 <a href="https://vk.com/andrew_westnord" target="_blank" class="messenger-item">
-                                    <img src="../lib/vkontacteBlue.svg" alt="Vkontakte">
+                                    <img src="../lib/messengers/vkontacteBlue.svg" alt="Vkontakte">
                                 </a>
                                 <a href="https://t.me/optoboxer" target="_blank" class="messenger-item">
-                                    <img src="../lib/telegramBlue.svg" alt="Telegram">
+                                    <img src="../lib/messengers/telegramBlue.svg" alt="Telegram">
                                 </a>
                                 <a href="tel:+8618812603001" class="messenger-item">
-                                    <img src="../lib/whatsappBlue.svg" alt="WhatsApp">
+                                    <img src="../lib/messengers/whatsappBlue.svg" alt="WhatsApp">
                                 </a>
                                 <a href="#" class="messenger-item">
-                                    <img src="../lib/vichat2.png" alt="ViChat">
+                                    <img src="../lib/messengers/vichatBlue.png" alt="ViChat">
                                 </a>
                             </div>
                         </div>
@@ -583,7 +575,7 @@
                         <img src="../lib/partners/tm_pz.svg" alt="TM PZ" class="partner-image">
                     </div>
                     <div class="partner-card">
-                        <img src="..lib/partners/kamaz.svg" alt="КАМАЗ" class="partner-image">
+                        <img src="../lib/partners/kamaz.svg" alt="КАМАЗ" class="partner-image">
                     </div>
                     <div class="partner-card">
                         <img src="../lib/partners/tatneft.svg" alt="Татнефть" class="partner-image">
@@ -629,114 +621,88 @@
             </div>
         </section>
 
-
         <!-- Questions Section -->
         <section id="questions" class="questions">
             <div class="container container_questions">
                 <div class="question">
-                    <h2 class="name-question">Часто задаваемые вопросы</h2>
-                    <div class="question-container">
-                        <div class="questioncard">
-                            <input type="checkbox" id="questioncard1" />
-                            <label for="questioncard1">Есть ли у вас минимальная сумма заказа?</label>
-                            <div class="question__hidden">Содержимое 1</div>
-                        </div>
+                    <h2 class="question__title">Часто задаваемые вопросы</h2>
+                    <div class="question__accordion__item">
+                        <h3 class="question__accordion__question">Есть ли у вас минимальная сумма заказа?</h3>
+                        <div class="question__accordion__answer"><h3>Содержимое 1</h3></div>
                     </div>
-                    <div class="question-container">
-                        <div class="questioncard">
-                            <input type="checkbox" id="questioncard2" />
-                            <label for="questioncard2">Какие документы необходимы для оформления доставки?</label>
-                            <div class="question__hidden">Содержимое 2</div>
-                        </div>
+                    <div class="question__accordion__item">
+                        <h3 class="question__accordion__question">Какие документы необходимы для оформления доставки?</h3>
+                        <div class="question__accordion__answer"><h3>Содержимое 2</h3></div>
                     </div>
-                    <div class="question-container">
-                        <div class="questioncard">
-                            <input type="checkbox" id="questioncard3" />
-                            <label for="questioncard3">Кто несет ответственность за повреждение груза во время
-                                доставки?</label>
-                            <div class="question__hidden">Содержимое 3</div>
-                        </div>
+                    <div class="question__accordion__item">
+                        <h3 class="question__accordion__question">Кто несет ответственность за повреждение груза во время доставки?</h3>
+                        <div class="question__accordion__answer"><h3>Содержимое 3</h3></div>
                     </div>
-                    <div class="question-container">
-                        <div class="questioncard">
-                            <input type="checkbox" id="questioncard4" />
-                            <label for="questioncard4">Оказываете ли вы помощь в таможенном оформлении?</label>
-                            <div class="question__hidden">Содержимое 4</div>
-                        </div>
+                    <div class="question__accordion__item">
+                        <h3 class="question__accordion__question">Оказываете ли вы помощь в таможенном оформлении?</h3>
+                        <div class="question__accordion__answer"><h3>Содержимое 4</h3></div>
                     </div>
-                    <div class="question-container">
-                        <div class="questioncard">
-                            <input type="checkbox" id="questioncard5" />
-                            <label for="questioncard5">Предоставляете ли вы услуги по упаковке груза?</label>
-                            <div class="question__hidden">Содержимое 5</div>
-                        </div>
+                    <div class="question__accordion__item">
+                        <h3 class="question__accordion__question">Предоставляете ли вы услуги по упаковке груза?</h3>
+                        <div class="question__accordion__answer"><h3>Содержимое 5</h3></div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
-    <footer>
+    <footer class="footer">
         <div id="contacts" class="footer__container">
-            <div class="footer-content">
-                <!-- Блок с фото слева -->
+            <div class="container footer__container">
                 <div class="footer-logo">
-                    <img src="../lib/footer.svg" alt="Логотип компании" class="logo-img">
+                    <img src="../lib/footer/footer.svg" alt="Логотип компании" class="logo-img">
                 </div>
-
-                <!-- Основной контент справа -->
                 <div class="footer-right">
-                    <!-- Навигационное меню -->
                     <nav class="footer-nav">
-                        <a href="#" class="footer-link">Портфолио</a>
-                        <a href="#" class="footer-link">Услуги</a>
-                        <a href="#" class="footer-link">Преимущества</a>
-                        <a href="#" class="footer-link">Процесс работы</a>
-                        <a href="#" class="footer-link">Вопросы</a>
-                        <a href="#" class="footer-link">Контакты</a>
+                        <a href="#portfolio" class="footer-link"><h3>Портфолио</h3></a>
+                        <a href="#services" class="footer-link"><h3>Услуги</h3></a>
+                        <a href="#advantages" class="footer-link"><h3>Преимущества</h3></a>
+                        <a href="#process" class="footer-link"><h3>Процесс работы</h3></a>
+                        <a href="#questions" class="footer-link"><h3>Вопросы</h3></a>
+                        <a href="#contacts" class="footer-link"><h3>Контакты</h3></a>
                     </nav>
-
-                    <!-- Контактная информация -->
                     <div class="footer-contacts">
                         <div class="contacts-info">
                             <div class="contact-item">
-                                <img src="../lib/letter.png" alt="Письмо" height="20">
-                                <span class="contact-type">Email</span>
+                                <img src="../lib/footer/contacts/letter.svg" alt="Письмо">
+                                <h3 class="contact-type">Email</h3>
                             </div>
                             <div class="contact-item">
-                                <img src="../lib/geo.png" alt="Метка адресса" height="30">
-                                <span class="contact-type">Адрес</span>
+                                <img src="../lib/footer/contacts/geo.svg" alt="Метка адресса">
+                                <h3 class="contact-type">Адрес</h3>
                             </div>
                             <div class="contact-item">
-                                <img src="../lib/clock.png" alt="Часы" height="30">
-                                <span class="contact-type">Время работы</span>
+                                <img src="../lib/footer/contacts/clock.svg" alt="Часы">
+                                <h3 class="contact-type">Время работы</h3>
                             </div>
                         </div>
-
                         <div class="messengers-block">
-                            <span class="messengers-caption">Задайте вопрос в мессенджер</span>
+                            <h3 class="messengers-caption">Задайте вопрос в мессенджер</h3>
                             <div class="messengers-list">
                                 <a href="https://vk.com/andrew_westnord" target="_blank" class="messenger-link"><img
-                                        src="../lib/vkontacte.svg" alt="ВКонтакте"></a>
+                                        src="../lib/messengers/vkontacteBlack.svg" alt="ВКонтакте"></a>
                                 <a href="https://t.me/optoboxer" target="_blank" class="messenger-link"><img
-                                        src="../lib/telegram.svg" alt="Telegram"></a>
-                                <a href="tel:+8618812603001" class="messenger-link"><img src="../lib/whatsapp.svg"
+                                        src="../lib/messengers/telegramBlack.svg" alt="Telegram"></a>
+                                <a href="tel:+8618812603001" class="messenger-link"><img src="../lib/messengers/whatsappBlack.svg"
                                         alt="WhatsApp"></a>
-                                <a href="#" class="messenger-link"><img src="../lib/vichat1.png" alt="ViChat"></a>
+                                <a href="#" class="messenger-link"><img src="../lib/messengers/vichatBlack.svg" alt="ViChat"></a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Кнопка и политика -->
                     <div class="footer-actions">
-                        <button class="consult-button">Получить бесплатную консультацию</button>
-                        <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+                        <button class="consult-button">Получите бесплатную консультацию</button>
+                        <a href="#" class="privacy-policy"><h3>Политика конфиденциальности</h3></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
