@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
     <script defer src="../js/main.js" defer></script>
-    <script defer src="../server.js"></script>
 
     <meta name="keywords" content="sinodeep, Sinodeep">
     <meta name="description" content="Открываем Китай для вашего бизнеса">
@@ -61,26 +60,79 @@
                 </a>
             </div>
             <div class="navbar__right">
-                <a id="language-switcher" class="language-switcher" aria-label="Switch language" href="../en/index.html">
+                <a id="language-switcher" class="language-switcher" aria-label="Switch language"
+                    href="../en/index.html">
                     <img src="../lib/header/ruen.svg" alt="Русский" class="language-icon" id="language-icon">
                 </a>
             </div>
-            <button class="burger-btn burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </button>
+
+            <div class="burger-header">
+                <button class="menu__burger burger" type="button">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">
+                                <h3>Портфолио</h3>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">
+                                <h3>Услуги</h3>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">
+                                <h3>Преимущества</h3>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">
+                                <h3>Процесс работы</h3>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">
+                                <h3>Вопросы</h3>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">
+                                <h3>Контакты</h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="burger-line"></span>
+                    <div class="main-nav-info">
+                        <h3 class="main-nav-title">Напишите нам, мы всегда онлайн!</h3>
+                        <div class="main-nav-messengers-list">
+                            <a href="https://vk.com/andrew_westnord" target="_blank"
+                                class="main-nav-messenger-link"><img src="../lib/messengers/vkontacteWhite.svg"
+                                    alt="ВКонтакте" width="40" height="40"></a>
+                            <a href="https://t.me/optoboxer" target="_blank" class="main-nav-messenger-link"><img
+                                    src="../lib/messengers/telegramWhite.svg" alt="Telegram" width="40" height="40"></a>
+                            <a href="tel:+8618812603001" class="main-nav-messenger-link"><img
+                                    src="../lib/messengers/whatsappWhite.svg" alt="WhatsApp" width="40" height="40"></a>
+                            <a href="#" class="main-nav-messenger-link"><img src="../lib/messengers/vichatWhite.svg"
+                                    alt="ViChat" width="40" height="40"></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <span class="line"></span>
         </div>
-        <span class="line"></span>
     </header>
     <main>
-        
         <a class="fix-btn" href="#">
             <h4 class="fix-title">Задать вопрос</h4>
             <img src="../lib/fix.svg" alt="">
         </a>
         <div class="fix-info">
-            <h4 class="fix-title">Напишите нам, мы <br>всегда онлайн!</h4>
+            <h4 class="fix-title-open">Напишите нам, мы <br>всегда онлайн!</h4>
             <div class="fix-messengers-list">
                 <a href="https://vk.com/andrew_westnord" target="_blank" class="fix-messenger-link"><img
                         src="../lib/messengers/vkontacteWhite.svg" alt="ВКонтакте"></a>
@@ -120,55 +172,49 @@
                 </div>
             </div>
         </section>
-
         <!-- Help Section -->
         <section id="services" class="help">
             <div class="container help__wrapper">
                 <h2 class="help-title">Вот как мы можем Вам помочь:</h2>
                 <div class="services-flex">
                     <div class="service-card">
-                        <h3 class="help__item-title">Откроем для Вас двери <br>заводов</h3>
-                        <p class="help__item-text">Найдем для Вас надежных <br>производителей в Китае, чтобы Вы
-                            <br>сотрудничали только с лучшими.</p>
+                        <h3 class="help__item-title">Откроем для Вас двери заводов</h3>
+                        <p class="help__item-text">Найдем для Вас надежных производителей в Китае, чтобы Вы сотрудничали
+                            только с лучшими.</p>
                     </div>
                     <div class="service-card">
                         <h3 class="help__item-title">Китай станет ближе</h3>
-                        <p class="help__item-text">Организуем Ваше сопровождение <br>по Китаю, включая поездки на
-                            <br>производства и выставки, чтобы <br>Вы лично убедились в качестве <br>продукции.</p>
+                        <p class="help__item-text">Организуем Ваше сопровождение по Китаю, включая поездки на
+                            производства и выставки, чтобы Вы лично убедились в качестве продукции.</p>
                     </div>
                     <div class="service-card highlighted">
                         <h3 class="help__item-title">Оплата без границ</h3>
-                        <p class="help__item-text">Позаботимся о безопасной <br>и простой оплате Вашим <br>поставщикам в
-                            Китае, <br>минуя любые сложности.</p>
+                        <p class="help__item-text">Позаботимся о безопасной и простой оплате Вашим поставщикам в Китае,
+                            минуя любые сложности.</p>
                     </div>
                     <div class="service-card">
-                        <h3 class="help__item-title">Ищем то, что нужно <br>именно Вам</h3>
-                        <p class="help__item-text">Позаботимся о безопасной и <br>простой оплате Вашим поставщикам <br>в
+                        <h3 class="help__item-title">Ищем то, что нужно именно Вам</h3>
+                        <p class="help__item-text">Позаботимся о безопасной и простой оплате Вашим поставщикам в
                             Китае, минуя любые сложности.</p>
                     </div>
-                </div>
-                <div class="services-flex">
                     <div class="service-card highlighted">
                         <h3 class="help__item-title">Лично контролируем качество</h3>
-                        <p class="help__item-text">Наши специалисты выезжают прямо на <br>фабрику, чтобы лично проверить
-                            качество <br>продукции. Мы убедимся, что товар <br>соответствует Вашим требованиям.</p>
+                        <p class="help__item-text">Наши специалисты выезжают прямо на фабрику, чтобы лично проверить
+                            качество продукции. Мы убедимся, что товар соответствует Вашим требованиям.</p>
                     </div>
                     <div class="service-card">
                         <h3 class="help__item-title">Переведем с китайского на Ваш язык</h3>
-                        <p class="help__item-text">Команда профессиональных переводчиков поможет <br>Вам с любыми
-                            языковыми барьерами и обеспечит <br>комфортное общение.</p>
+                        <p class="help__item-text">Команда профессиональных переводчиков поможет Вам с любыми
+                            языковыми барьерами и обеспечит комфортное общение.</p>
                     </div>
                     <div class="service-card">
                         <h3 class="help__item-title">Найдем самый короткий путь</h3>
-                        <p class="help__item-text">Специалисты подберут для Вас оптимальный <br>логистический маршрут,
-                            чтобы В аши товары <br>прибыли вовремя и с минимальными затратами.</p>
+                        <p class="help__item-text">Специалисты подберут для Вас оптимальный логистический маршрут,
+                            чтобы В аши товары прибыли вовремя и с минимальными затратами.</p>
                     </div>
                 </div>
             </div>
-            </div>
-
         </section>
-
         <!-- Extra help Section -->
         <section id="extra--help" class="extra--help">
             <div class="container extra--help__wrapper">
@@ -178,8 +224,8 @@
                         <div class="extra--help-card extra--help-card1">
                             <div class="extra--help-content">
                                 <h3 class="extra--help-content-subtitle">Доставим срочно</h3>
-                                <p class="extra--help-content-text">Нужны образцы или небольшие партии? <br>Доставим
-                                    Ваши товары авиа “в рюкзаке” всего за 3-5 дней из Пекина в <br>Москву и наоборот.
+                                <p class="extra--help-content-text">Нужны образцы или небольшие партии? Доставим
+                                    Ваши товары авиа “в рюкзаке” всего за 3-5 дней из Пекина в Москву и наоборот.
                                     Быстро и надежно!</p>
                             </div>
                         </div>
@@ -187,7 +233,7 @@
                             <div class="extra--help-content">
                                 <h3 class="extra--help-content-subtitle">Консолидируем Ваши грузы</h3>
                                 <p class="extra--help-content-text">Выкупим и соберем Ваши товары на наших складах в Иу
-                                    и Фошане, а <br>затем отправим их карго. Это удобно и выгодно!</p>
+                                    и Фошане, а затем отправим их карго. Это удобно и выгодно!</p>
                             </div>
                         </div>
                         <div class="extra--help-card extra--help-card3">
@@ -265,7 +311,8 @@
             <div class="container job-description__wrapper">
                 <div class="job-description__container">
                     <div>
-                        <img class="job-description-image" src="../lib/jobDescription/jobDescription.png" alt="job-description">
+                        <img class="job-description-image" src="../lib/jobDescription/jobDescription.png"
+                            alt="job-description">
                     </div>
                     <div class="job-description__block">
                         <h2 class="job-description__title">Ваш прямой доступ к лучшим <br>производителям Китая</h2>
@@ -652,23 +699,35 @@
                     <h2 class="question__title">Часто задаваемые вопросы</h2>
                     <div class="question__accordion__item">
                         <h3 class="question__accordion__question">Есть ли у вас минимальная сумма заказа?</h3>
-                        <div class="question__accordion__answer"><h3>Содержимое 1</h3></div>
+                        <div class="question__accordion__answer">
+                            <h3>Содержимое 1</h3>
+                        </div>
                     </div>
                     <div class="question__accordion__item">
-                        <h3 class="question__accordion__question">Какие документы необходимы для оформления доставки?</h3>
-                        <div class="question__accordion__answer"><h3>Содержимое 2</h3></div>
+                        <h3 class="question__accordion__question">Какие документы необходимы для оформления доставки?
+                        </h3>
+                        <div class="question__accordion__answer">
+                            <h3>Содержимое 2</h3>
+                        </div>
                     </div>
                     <div class="question__accordion__item">
-                        <h3 class="question__accordion__question">Кто несет ответственность за повреждение груза во время доставки?</h3>
-                        <div class="question__accordion__answer"><h3>Содержимое 3</h3></div>
+                        <h3 class="question__accordion__question">Кто несет ответственность за повреждение груза во
+                            время доставки?</h3>
+                        <div class="question__accordion__answer">
+                            <h3>Содержимое 3</h3>
+                        </div>
                     </div>
                     <div class="question__accordion__item">
                         <h3 class="question__accordion__question">Оказываете ли вы помощь в таможенном оформлении?</h3>
-                        <div class="question__accordion__answer"><h3>Содержимое 4</h3></div>
+                        <div class="question__accordion__answer">
+                            <h3>Содержимое 4</h3>
+                        </div>
                     </div>
                     <div class="question__accordion__item">
                         <h3 class="question__accordion__question">Предоставляете ли вы услуги по упаковке груза?</h3>
-                        <div class="question__accordion__answer"><h3>Содержимое 5</h3></div>
+                        <div class="question__accordion__answer">
+                            <h3>Содержимое 5</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -682,12 +741,24 @@
                 </div>
                 <div class="footer-right">
                     <nav class="footer-nav">
-                        <a href="#portfolio" class="footer-link"><h3>Портфолио</h3></a>
-                        <a href="#services" class="footer-link"><h3>Услуги</h3></a>
-                        <a href="#advantages" class="footer-link"><h3>Преимущества</h3></a>
-                        <a href="#process" class="footer-link"><h3>Процесс работы</h3></a>
-                        <a href="#questions" class="footer-link"><h3>Вопросы</h3></a>
-                        <a href="#contacts" class="footer-link"><h3>Контакты</h3></a>
+                        <a href="#portfolio" class="footer-link">
+                            <h3>Портфолио</h3>
+                        </a>
+                        <a href="#services" class="footer-link">
+                            <h3>Услуги</h3>
+                        </a>
+                        <a href="#advantages" class="footer-link">
+                            <h3>Преимущества</h3>
+                        </a>
+                        <a href="#process" class="footer-link">
+                            <h3>Процесс работы</h3>
+                        </a>
+                        <a href="#questions" class="footer-link">
+                            <h3>Вопросы</h3>
+                        </a>
+                        <a href="#contacts" class="footer-link">
+                            <h3>Контакты</h3>
+                        </a>
                     </nav>
                     <div class="footer-contacts">
                         <div class="contacts-info">
@@ -711,9 +782,10 @@
                                         src="../lib/messengers/vkontacteBlack.svg" alt="ВКонтакте"></a>
                                 <a href="https://t.me/optoboxer" target="_blank" class="messenger-link"><img
                                         src="../lib/messengers/telegramBlack.svg" alt="Telegram"></a>
-                                <a href="tel:+8618812603001" class="messenger-link"><img src="../lib/messengers/whatsappBlack.svg"
-                                        alt="WhatsApp"></a>
-                                <a href="#" class="messenger-link"><img src="../lib/messengers/vichatBlack.svg" alt="ViChat"></a>
+                                <a href="tel:+8618812603001" class="messenger-link"><img
+                                        src="../lib/messengers/whatsappBlack.svg" alt="WhatsApp"></a>
+                                <a href="#" class="messenger-link"><img src="../lib/messengers/vichatBlack.svg"
+                                        alt="ViChat"></a>
                             </div>
                         </div>
                     </div>
@@ -721,7 +793,9 @@
                     <!-- Кнопка и политика -->
                     <div class="footer-actions">
                         <button class="consult-button">Получите бесплатную консультацию</button>
-                        <a href="#" class="privacy-policy"><h3>Политика конфиденциальности</h3></a>
+                        <a href="#" class="privacy-policy">
+                            <h3>Политика конфиденциальности</h3>
+                        </a>
                     </div>
                 </div>
             </div>
