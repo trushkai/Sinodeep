@@ -87,7 +87,7 @@ p {
     h3 {
         font-size: 18px;
         font-weight: 400;
-        margin-left: 50px;
+
     }
 }
 
@@ -106,14 +106,9 @@ p {
         font-size: 16px;
         font-weight: 400;
     }
-    h4 {
-        font-size: 13px;
-        font-weight: 400;
-    }
-    p {
-        font-size: 13px;
-        font-weight: 400;
-    }
+
+
+
 }
 /* ----------- общие ------------ */
 
@@ -1109,9 +1104,10 @@ p {
     border-radius: 50px;
 }
 
-@media (max-width: 978px) {
+@media (max-width: 1050px) {
     .quality-row {
         margin-right: 0px;
+        aspect-ratio: 1/1;
     }
 
     .quality-row-text {
@@ -1120,7 +1116,7 @@ p {
     }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 890px) {
     .quality-row {
 aspect-ratio: 1/1;
     }
@@ -1208,7 +1204,19 @@ aspect-ratio: 1/1;
 
 }
 
-@media (max-width: 1168px) {}
+@media (max-width: 1168px) {
+    .job-description__title br,
+    .sublist_number h3 br {
+        display: none;
+    }
+
+    .job-description-image {
+     position: relative;
+        right: 0;
+        margin-bottom: 50px;
+        margin-left: 170px;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -1224,6 +1232,9 @@ aspect-ratio: 1/1;
         position: relative;
         margin-left: 85px;
         margin-bottom: 50px;
+    }
+    .job-description{
+        margin-top: 30px;
     }
 }
 
@@ -1244,7 +1255,6 @@ aspect-ratio: 1/1;
         width: 100%;
         max-width: 100%;
         height: auto;
-        margin: 30px 0 0 0;
         padding: 0;
         align-self: center;
 
@@ -1255,10 +1265,13 @@ aspect-ratio: 1/1;
     .job-description-content-text {
         order: 0;
         width: 100%;
-        padding: 0;
-        margin: 0;
+        padding-bottom: 8px;
+
     }
 
+    .job-description__title{
+        padding-top: 30px;
+    }
     .job-description__wrapper {
         padding: 20px 15px;
     }
@@ -1291,18 +1304,27 @@ aspect-ratio: 1/1;
 
 .fin-operation__subtitle {
     margin-bottom: 130px;
+    font-size: 24px;
 }
 
 .operation-links {
     padding-left: 300px;
     max-width: 1170px;
+
 }
 
 .operation__link {
     padding-bottom: 10px;
-    line-height: 1.5
+    line-height: 1.5;
+    font-size: 24px;
 }
-
+@media (max-width: 1300px){
+    .fin-operation__subtitle {
+       
+        margin-left: 50px;
+    }
+    
+}
 @media (max-width: 1030px) {
     .operation-links {
         padding-left: 2px;
@@ -1310,9 +1332,32 @@ aspect-ratio: 1/1;
 
     .fin-operation__title {
         margin-left: 10px;
+
+    }
+    .operation__link,.fin-operation__subtitle{
+        font-size: 18px;
+
     }
 }
 
+@media (max-width: 780px) {
+    
+    .fin-operation__subtitle{
+        margin-left: 10px;
+    }
+    .operation-links{
+        margin-left: 10px;
+    }
+    .operation__link,.fin-operation__subtitle{
+        font-size: 16px;
+
+    }
+}
+@media (max-width: 480px) {
+.fin-operation{
+    height: 1210px;
+}
+}
 /*---------------------Financial Operation--------------*/
 
 /*---------------------Logistics--------------*/
@@ -1476,7 +1521,94 @@ aspect-ratio: 1/1;
     padding-bottom: 30px;
 }
 
-@media (max-width: 1124px) {}
+@media (max-width: 1045px) {
+    .portfolio__title {
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+    
+    .portfolio-cards {
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .portfolio-card2 {
+        padding: 25px;
+    }
+    .director-img{
+        width: 300px;
+        height: 430px;
+    }
+    .portfolio-content-text {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 868px) {
+    .portfolio__title {
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+    }
+    
+    .portfolio-cards {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+        max-width: 600px;
+    }
+    
+    .portfolio-card1,
+    .portfolio-card2 {
+        grid-column: 1; 
+        grid-row: auto;
+    }
+    
+    .portfolio-card2 {
+        padding: 20px;
+    }
+    
+    .portfolio-content-text {
+        padding-bottom: 20px;
+    }
+    .director-img{
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio__title {
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-cards {
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .portfolio-card {
+        border-radius: 15px;
+    }
+    
+    .portfolio-card2 {
+        padding: 15px;
+    }
+    
+    .portfolio-content-text {
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio__title {
+        font-size: 1.3rem;
+    }
+    
+    .portfolio-card2 {
+        padding: 10px;
+    }
+}
 
 /*---------------------Quality description--------------*/
 
@@ -1508,12 +1640,20 @@ aspect-ratio: 1/1;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 
     .advantages {
         padding: 30px;
     }
-}
+    .choose__item{
+        margin-right: 45px;
+    }
+        .col-lg-6 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+    }
+
 
 @media (max-width: 870px) {
 
@@ -1882,6 +2022,190 @@ aspect-ratio: 1/1;
     }
 }
 
+@media (max-width: 1300px) {
+    .contact-form{
+        margin-right: 30px;
+    }
+    .messengers{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .form {
+        height: 1200px; 
+        min-height: 900px;
+        margin-top: 80px;
+        background-position: center;
+    }
+    
+    .form__content {
+        padding-top: 180px;
+    }
+    
+    .form__subtitle {
+        margin-bottom: 25px;
+    }
+    .form__title {
+        margin-bottom: 25px;
+    }
+    
+    .form__container {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+    
+    .form-group input,
+    .form-group label {
+        font-size: 20px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .messengers {
+        justify-content: center;
+    }
+}
+@media (max-width: 1050px) {
+.block-m{
+  display: none;
+ }
+
+ .form__subtitle br {
+     display: none;
+ }
+}
+
+@media (max-width: 768px) {
+    .form {
+        min-height: 800px;
+        margin-top: 60px;
+    }
+    
+    .form__content {
+        padding-top: 150px;
+    }
+    
+    .form__title {
+        font-size: 28px;
+    }
+    
+    .form__subtitle {
+        margin-bottom: 60px;
+        font-size: 18px;
+    }
+    
+    .contacts__title {
+        font-size: 22px;
+    }
+    
+    .form-group input {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+    
+    .form-group label {
+        font-size: 18px;
+        left: 20px;
+    }
+    
+    .submit-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+   
+}
+
+@media (max-width: 600px) {
+    .form {
+        min-height: 700px;
+        margin-top: 40px;
+        height: 1025px;
+    }
+    
+    .form__content {
+        padding-top: 120px;
+    }
+    
+    .form__title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .form__subtitle {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    
+    .contacts__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .messengers {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .messenger-item img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+    
+    .form-group input {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .form-group label {
+        font-size: 14px;
+        left: 15px;
+        margin-top: 15px;
+    }
+    
+    .form-group textarea {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .textarea {
+        height: 100px;
+    }
+    
+    .submit-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+    .form-group p br,
+    .agreement span br{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .form {
+        min-height: 650px;
+        margin-top: 30px;
+    }
+    
+    .form__content {
+        padding-top: 100px;
+    }
+    .form-group p br,
+    .agreement span br{
+        display: none;
+    }
+
+}
 /* ----------- Form Section ------------ */
 
 /* ----------- Partners Section ------------ */
