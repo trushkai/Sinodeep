@@ -1113,6 +1113,9 @@ p {
     .solution-dev__container {
         margin: 0 50px;
     }
+    .solution-dev {
+        margin-top: 300px;
+    }
  }
  @media (max-width: 1045px) {
     .solution-dev {
@@ -1121,12 +1124,66 @@ p {
     .solution-dev__container {
         margin: 0;
     }
+    .solution-dev__title {
+        margin-top: -200px;
+    }
  }
- @media (max-width: 769px) {
-
+ @media (max-width: 770px) {
+    .solution-dev__container {
+        margin: 0 20px;
+    }
+    .solution-dev__title {
+        margin-top: -250px;
+    }
+    .solution-dev {
+        margin-top: 400px;
+    }
+ }
+ @media (max-width: 720px) {
+    .solution-dev__container {
+        margin: 0 20px;
+    }
+    .solution-dev__title {
+        margin-top: -260px;
+    }
  }
  @media (max-width: 500px) {
-
+    .solution-dev__container {
+        margin: 0;
+    }
+    .solution-dev {
+        background-image: url("../lib/dev-lines-small.svg");
+        height: 230px;
+    }
+    .solution-dev-list li {
+        margin-top: 45px;
+    }
+    .solution-dev-list h3 {
+        font-size: 14px;
+    }
+    .solution-dev-list li::before {
+        font-size: 40px;
+    }
+ }
+ @media (max-width: 360px) {
+    .solution-dev__container {
+        margin: 0;
+    }
+    .solution-dev__title {
+        margin-top: -320px;
+    }
+    .solution-dev {
+        margin-top: 450px;
+    }
+    .solution-dev-list li {
+        margin-top: 45px;
+    }
+    .solution-dev-list h3 {
+        font-size: 14px;
+    }
+    .solution-dev-list li::before {
+        font-size: 40px;
+    }
  }
 
 /*---------------------Solution Dev--------------*/
@@ -1240,7 +1297,94 @@ p {
     font-size: 64px;
 }
 
+@media (max-width: 1350px) {
+    .job-description-image {
+        width: 400px;
+        height: 480px;
+    }
+}
 @media (max-width: 1300px) {
+    .job-description__title {
+        margin-left: 0;
+    }
+    .job-description__subtitle {
+        margin-left: 0;
+    }
+    .job-description-content-text h3 {
+        margin-left: 0;
+    }
+    .job-description__container {
+        margin: 0 50px;
+    }
+    .job-description-image {
+        right: 50px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .job-description-image {
+        width: 240px;
+        height: 300px;
+        top: 150px;
+    }
+}
+@media (max-width: 1045px) {
+    .job-description__container {
+        margin: 0;
+    }
+    .job-description-image {
+        right: 0;
+    }
+    .sublist_number {
+        font-size: 36px;
+    }
+    .job-description-list li {
+        padding-left: 30px;
+        margin-top: 10px;
+        max-width: 500px;
+    }
+}
+@media (max-width: 768px) {
+    .job-description__container {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    .job-description__container > div:first-child {
+      position: static;
+      margin: 20px 0;
+    }
+    .job-description-image {
+      position: static !important; 
+      width: auto;
+      height: auto;
+    }
+    .job-description__container > div:first-child { order: 3; }
+    
+    .job-description__title br,
+    .job-description__subtitle br {
+      display: none;
+  }
+  .job-description__title {
+    margin-bottom: 20px;
+}
+.job-description__subtitle{
+    margin-bottom: 20px;
+}
+.job-description-text {
+    margin-bottom: 20px;
+}
+}
+  
+  
+  
+  
+
+@media (max-width: 576px) {
+}
+
+
+/* @media (max-width: 1300px) {
     .job-description {
         padding: 40px 20px;
     }
@@ -1309,7 +1453,7 @@ p {
     .job-description__title{
         padding-top: 30px;
     }
-}
+} */
 
 /*---------------------Job description--------------*/
 
@@ -1745,7 +1889,7 @@ p {
 }
 
 .choose__item-title1 {
-    margin-top: 9px;
+    margin-top: 33px;
     margin-bottom: 19px;
     font-weight: bold;
     margin-left: 3px;
@@ -1763,9 +1907,16 @@ p {
     .choose__item{
         margin-right: 45px;
     }
-    .col-lg-6 {
+    .col-lg-3 {
         flex: 1 0 auto;
         width: 40%;
+    }
+    .choose__item-title1 {
+        margin-top:9px;
+        margin-bottom: 19px;
+        font-weight: bold;
+        margin-left: 3px;
+
     }
 }
 @media (max-width: 870px) {
@@ -2531,13 +2682,6 @@ footer {
     padding: 30px 0;
 }
 
-.footer__container {
-    display: flex;
-    gap: 60px;
-    max-width: 1630px;
-    margin: 0 auto;
-}
-
 .footer-right {
     flex: 1;
     display: flex;
@@ -2547,7 +2691,7 @@ footer {
 .footer-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 25px;
     margin-top: 40px;
 }
@@ -2600,7 +2744,8 @@ footer {
 
 .footer-actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 50px;
     align-items: flex-end;
     margin-top: 60px;
 }
@@ -2638,9 +2783,8 @@ footer {
 
 /* Адаптивность */
 @media (max-width: 1300px) {
-    .footer__container {
-        margin: 0 20px;
-        row-gap: 15px;
+    .footer__wrapper {
+        margin: 0 50px;
     }
     .footer-nav {
         gap: 20px;
@@ -2648,12 +2792,6 @@ footer {
     }
     .footer-link h3 {
         margin-left: 0;
-    }
-    .footer-img{
-        min-width: 306px;
-        min-height: 229px;
-        max-width: 476px;
-        max-height: 400px;
     }
     .footer-contacts{
         margin-top: 30px;
@@ -2690,20 +2828,7 @@ footer {
 @media (max-width: 1045px) {
     .contacts-info {
         gap: 10px;
-   } 
-   .footer-nav {
-        max-width: 754px;
-        position: absolute;
-        gap: 25px;
-        left: 0;
-    }
-    .footer-img {
-        max-width: 306px;
-        max-height: 229px;
-        object-fit: cover;
-        border-radius: 20px;
-        margin-top: 50px;
-    }
+   }
     .footer-contacts {
         margin-top: 50px;
         margin-bottom: 10px;
@@ -2713,54 +2838,21 @@ footer {
     }
 }
 @media (max-width: 910px) {
-    .footer-img {
-        margin-top: 100px;
-    }
-    .footer-contacts {
-        margin-top: 100px;
-    }
-    .footer-logo {
-        order: 2;
-    } 
-    .footer-right {
-        order: 1;
-    }
+    
     .footer__container {
         flex-wrap: wrap;
     }
 }
 @media (max-width: 769px) {
     .footer-nav {
-        row-gap: 5px;
+        justify-content: normal;
     }
     .contact-item-img {
         max-width: 25px;
         max-height: 25px;
     }
 }
-@media (max-width: 761px) {
-    
-    .footer__container {
-        row-gap: 15px;
-    }
-    .footer__container {
-        margin: 0 10px;
-    }
-}
-@media (max-width: 630px) {
-    .footer-img {
-        margin-top: 0;
-        min-width: 362px;
-        max-height: 229px;
-    }
-}
-@media (max-width: 420px) {
-    .footer-img {
-        margin-top: 0;
-        min-width: auto;
-        max-height: 229px;
-    }
-}
+
 @media (max-width: 300px) {
     .footer-contacts {
         margin-top: 140px;
