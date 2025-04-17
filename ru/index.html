@@ -127,7 +127,6 @@
     </header>
     <main>
         <a class="fix-btn" href="#">
-            <h4 class="fix-title">Задать вопрос</h4>
             <img src="../lib/fix.svg" alt="">
         </a>
         <div class="fix-info">
@@ -313,12 +312,14 @@
             <div class="container job-description__wrapper">
                 <div class="job-description__container">
                     <div>
-                        <img class="job-description-image" src="../lib/jobDescription/jobDescription.png"
-                            alt="job-description">
+                        <picture>
+                            <source srcset="../lib/jobDescription/jobDescription-small.png" media="(max-width: 768px)">
+                            <img class="job-description-image" srcset="../lib/jobDescription/jobDescription.png" alt="job-description">
+                        </picture>
                     </div>
                     <div class="job-description__block">
                         <h2 class="job-description__title">Ваш прямой доступ к лучшим <br>производителям Китая</h2>
-                        <h3 class="job-description__subtitle">Мы – ваши партнеры, открывающие двери к надежным фабрикам
+                        <h3 class="job-description__subtitle">Мы – Ваши партнеры, открывающие двери к надежным фабрикам
                             Китая.</h3>
                         <div class="job-description-content-text">
                             <h3 class="job-description-text">Как мы работаем:</h3>
@@ -738,11 +739,8 @@
         </section>
     </main>
     <footer id="contacts" class="footer">
-        <div id="contacts" class="footer__container">
+        <div id="contacts" class="footer__wrapper">
             <div class="container footer__container">
-                <div class="footer-logo">
-                    <img src="../lib/footer/footer.svg" alt="Логотип компании" class="footer-img">
-                </div>
                 <div class="footer-right">
                     <nav class="footer-nav">
                         <a href="#portfolio" class="footer-link">
@@ -768,15 +766,15 @@
                         <div class="contacts-info">
                             <div class="contact-item">
                                 <img class="contact-item-img" src="../lib/footer/contacts/letter.svg" alt="Письмо">
-                                <h3 class="contact-type">Email</h3>
+                                <h3 class="contact-type">westnord95@gmail.com</h3>
                             </div>
                             <div class="contact-item">
                                 <img class="contact-item-img" src="../lib/footer/contacts/geo.svg" alt="Метка адресса">
-                                <h3 class="contact-type">Адрес</h3>
+                                <h3 class="contact-type">A301 Puchen Building, Xiqing District, Tianjin, China</h3>
                             </div>
                             <div class="contact-item">
-                                <img class="contact-item-img" src="../lib/footer/contacts/clock.svg" alt="Часы">
-                                <h3 class="contact-type">Время работы</h3>
+                                <img class="contact-item-img" src="../lib/footer/contacts/telephone.svg" alt="Часы">
+                                <h3 class="contact-type">+86 155 0223 9161</h3>
                             </div>
                         </div>
                         <div class="messengers-block">
