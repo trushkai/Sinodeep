@@ -115,44 +115,33 @@ p {
 /* ----------- фиксированные кнопки ------------ */
 .fix-btn{
     position: fixed;
-    bottom: 120px;
-    right: 150px;
+    bottom: 100px;
+    right: 50px;
     display: flex;
     flex-direction: row;
     cursor: pointer;
     align-items: center;
-    background-color: #ffffff;
     border-radius: 100px;
     z-index: 1000;
-    transition: all 0.3s ease-in-out;
-}
-.fix-btn:hover,
-.fix-btn:focus {
-    transform: scale(1.1);
-}
-
-.fix-title{
-    margin: 0 10px;
-    margin-left: 20px;
 }
 
 .fix-title-open{
-    margin: 0 10px;
+    margin: 0 15px 0 10px;
     margin-left: 20px;
 }
 
 .fix-info {
     position: fixed;
-    bottom: 30px;
-    right: 150px;
-    z-index: 1000;
+    bottom: 100px;
+    right: 50px;
+    z-index: 500;
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: 10px 100px 10px 10px;
     overflow: hidden;
     opacity: 0;
     transition: opacity 0.3s ease
@@ -569,11 +558,11 @@ p {
     }
     .fix-btn {
         right: 40px;
-        bottom: 50px;
+        bottom: 40px;
     }
     .fix-btn img{
-        width: 53px;
-        height: 53px;
+        width: 58px;
+        height: 58px;
     }
     .fix-title{
         font-size: 14px;
@@ -582,8 +571,8 @@ p {
         font-size: 14px;
     }
     .fix-info{
-        right: 230px;
-        bottom: 50px;
+        right: 40px;
+        bottom: 40px;
     }
     .fix-messengers-list img{
         width: 37px;
@@ -679,12 +668,10 @@ p {
         width: 53px;
         height: 53px;
     }
-    .fix-title{
-        display: none;
-    }
     .fix-info{
-        right: 60px;
+        right: 5px;
         bottom: 50px;
+        padding: 7px 70px 7px 10px;
     }
     .fix-messengers-list img{
         width: 37px;
@@ -708,6 +695,11 @@ p {
     }
     .hero__content {
         min-height: 700px;
+    }
+}
+@media (max-width: 430px) {
+    .fix-title-open {
+        display: none;
     }
 }
 
@@ -1015,9 +1007,7 @@ p {
     .extra--help-content-text {
         padding: 0 20px;
     }
-
 }
-
 @media (max-width: 500px) {
     .extra--help {
         margin-top: 10px;
@@ -1105,6 +1095,39 @@ p {
     font-size: 64px;
     color: white;
 }
+
+@media (max-width: 1300px) {
+    .solution-dev__title {
+        margin-left: 0;
+    }
+    .solution-dev__subtitle {
+        margin-left: 0;
+    }
+    .solution-dev-list h3 {
+        margin-left: 0;
+    }
+    .solution-dev__title {
+        margin-bottom: 30px;
+        margin-top: -180px;
+    }
+    .solution-dev__container {
+        margin: 0 50px;
+    }
+ }
+ @media (max-width: 1045px) {
+    .solution-dev {
+        margin-top: 300px;
+    }
+    .solution-dev__container {
+        margin: 0;
+    }
+ }
+ @media (max-width: 769px) {
+
+ }
+ @media (max-width: 500px) {
+
+ }
 
 /*---------------------Solution Dev--------------*/
 
