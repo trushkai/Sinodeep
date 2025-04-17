@@ -1266,15 +1266,21 @@ p {
         display: flex;
         flex-direction: column;
         gap: 600px;
+       
     }
     .job-description-image {
-        position: absolute;
+        display: none;
+
+        /* position: absolute;
         order: 1;
         width: 100%;
         max-width: 100%;
         height: auto;
         padding: 0;
-        align-self: center;
+        align-self: center; */
+    }
+    .job-description__subtitle{
+    background-image: url("../lib/job_description.png");
     }
     .job-description__title,
     .job-description__subtitle,
@@ -1341,6 +1347,8 @@ p {
     }
     .operation__link,.fin-operation__subtitle{
         font-size: 18px;
+        margin-left: 3px;
+    
     }
 }
 @media (max-width: 780px) {
@@ -1477,7 +1485,120 @@ p {
     list-style-type: disc;
 }
 
+@media (max-width: 1300px) {
+    .logistics__title {
+        margin-bottom: 40px;
+        font-size: 1.8rem;
+    }
+    
+    .logistics__subtitle {
+        margin-bottom: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .logic-cards {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .logic-content-text {
+        padding: 20px;
+    }
+    
+    .sublist {
+        padding-left: 20px;
+    }
+}
 
+
+@media (max-width: 768px) {
+    .logistics__title {
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+    
+    .logistics__subtitle {
+        margin-bottom: 30px;
+
+    }
+    
+    .logic-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+
+    .logic-card1,
+    .logic-card2,
+    .logic-card3,
+    .logic-card4,
+    .logic-card5 {
+        grid-column: 1;
+        grid-row: auto;
+        height: auto; 
+    }
+    
+
+    .logic-card1 img,
+    .logic-card5 img {
+        height: auto;
+        max-height: 300px;
+        width: 100%;
+    }
+    
+    .logic-card3 {
+        height: auto;
+    }
+    
+    .logic_image {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+    
+    .logic-content-text {
+        padding: 15px;
+    }
+    
+    .logistics-delivery-text {
+        margin-bottom: 15px;
+    }
+    
+    .sublist {
+        padding-left: 15px;
+    }
+    
+
+    .logic-content-row {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logistics__title {
+        margin-bottom: 20px;
+    }
+    
+    .logic-cards {
+        gap: 10px;
+    }
+    
+    .logic-card {
+        border-radius: 26px;
+    }
+    
+    .logic_image {
+        max-height: 200px;
+    }
+    
+    .logic-content-text {
+        padding: 10px;
+    }
+}
 /*---------------------Logistics--------------*/
 
 /*---------------------Quality description--------------*/
@@ -1617,9 +1738,11 @@ p {
 }
 
 .choose__item-title1 {
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 9px;
+    margin-bottom: 19px;
     font-weight: bold;
+    margin-left: 3px;
+
 }
 
 @media (max-width: 1124px) {
@@ -1635,10 +1758,12 @@ p {
     .choose__item{
         margin-right: 45px;
     }
-    .col-lg-6 {
-        flex: 0 0 auto;
-        width: 25%;
+    .col-lg-3 {
+        flex: 1 0 auto;
+        width: 40%;
+    
     }
+ 
 }
 
 @media (max-width: 870px) {
@@ -1652,6 +1777,13 @@ p {
         gap: 17px;
         align-items: flex-start;
     }
+}
+@media (max-width: 650px){
+.col-lg-3 {
+  
+  width: 52%;
+
+}
 }
 
 /*---------------------Why choose--------------*/
@@ -2217,9 +2349,13 @@ p {
     .form__subtitle{
         width: auto;
         font-size: 17px;
+        margin-bottom: 30px;
     }
     .form-group {
         margin-bottom: 15px;
+    }
+    .block-m{
+        display: none;
     }
 }
 @media (max-width: 500px) {
