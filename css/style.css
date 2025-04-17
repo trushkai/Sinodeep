@@ -628,6 +628,11 @@ p {
         min-height: 450px;
     }
 }
+@media (max-width: 770px) {
+    .hero {
+        border-radius: 20px;
+    }
+}
 @media (max-width: 720px) {
     .cube-1 {
         height: 140px;
@@ -664,9 +669,6 @@ p {
     .hero__content {
         min-height: 630px;
     }
-    .hero__wrapper {
-        margin: 0 13px;
-    }
 }
 @media (max-width: 570px) {
     .fix-btn {
@@ -694,22 +696,18 @@ p {
     .cubes-grid{
         right: 0;
         top: 55%;
-    }  
-}
-@media (max-width: 400px) {
+    } 
     .cubes-grid {
-        display: none;
+        top: 47%;
+    }
+    .hero__title {
+        margin-bottom: 20px;
     }
     .hero__btn {
-        padding: 15px 15px;
-        width: 90%;
-    }
-    .hero__description {
-        margin-bottom: 50px;
-        max-width: 100%;
+        width: 100%;
     }
     .hero__content {
-        min-height: 430px;
+        min-height: 700px;
     }
 }
 
@@ -774,6 +772,8 @@ p {
     border: none;
 }
 
+
+
 @media (max-width: 1300px) {
     .services-flex {
         margin: 0 50px 30px;
@@ -816,7 +816,7 @@ p {
         margin-left: 0;
     }
 }
-@media (max-width: 769px) {
+@media (max-width: 770px) {
     .service-card:nth-child(1){
         max-width: none;
     }
@@ -845,10 +845,31 @@ p {
         margin-left: 10px;
     }
     .services-flex {
-        margin: 0 10px 30px;
+        margin: 0 ;
         gap: 10px;
     }
+    .help {
+        margin-top: 30px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        border-radius: 20px;
+    }
+    .help-title {
+        margin-left: 0;
+    }
+    .help__item-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .service-card {
+        padding: 20px 20px 0;
+    }
+    .services-flex {
+        gap: 20px;
+    }
 }
+
+
 /* ----------- Help Section ------------ */
 
 /*---------------------Extra help--------------*/
@@ -968,7 +989,6 @@ p {
         width: 97%;
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(4, auto);
-        row-gap: none;
     }
     .extra--help__title {
         margin-bottom: 30px;
@@ -997,27 +1017,48 @@ p {
     }
 
 }
+
 @media (max-width: 500px) {
+    .extra--help {
+        margin-top: 10px;
+        padding-bottom: 0;
+    }
+    .extra--help__title {
+        margin-left: 0;
+    }
     .extra--help-cards {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, auto);
+        margin: 0;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .extra--help-content-subtitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .extra--help-content {
+        padding: 20px 20px 0;
+    }
+    .extra--help-content-text {
+        padding: 0;
     }
     .extra--help-card1 {
-        height: 147px;
+        height: 100%;
     }
     .extra--help-card2 {
-        height: 130px;
+        height: 100%;
     }
     .extra--help-card3 {
-        height: 113px;
+        height: 100%;
     }
     .extra--help-card4 {
-        height: 135px;
-    }
-    .extra_image {
-        height: auto;
+        height: 100%;
     }
 }
+
+
 /*---------------------Extra help--------------*/
 
 /*---------------------Solution Dev--------------*/
@@ -1824,7 +1865,7 @@ p {
         padding: 15px 20px 10px;
         max-width: none;
     }
-    br {
+    .process-text br {
         display: none;
     }
     .step-number {
@@ -2335,6 +2376,11 @@ p {
     }
     .question {
         margin: 0 0 200px;
+    }
+}
+@media (max-width: 770px) {
+    .question__accordion__item {
+        border-radius: 20px;
     }
 }
 @media (max-width: 700px) {
