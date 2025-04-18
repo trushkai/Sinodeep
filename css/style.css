@@ -1237,6 +1237,20 @@ p {
     border-radius: 50px;
 }
 
+@media (max-width: 1300px) {
+    .quality-description__title {
+        margin-left: 0;
+    }
+    .quality-description__subtitle {
+        margin-left: 0;
+    }
+    .quality-description__container {
+        margin: 0 50px;
+    }
+    .quality-text {
+        margin-left: 0;
+    }
+ }
 @media (max-width: 1050px) {
     .quality-row {
         margin-right: 0px;
@@ -1244,6 +1258,13 @@ p {
     }
     .quality-row-text {
         gap: 0px;
+        padding-bottom: 30px;
+    }
+    .quality-description__container {
+        margin: 0;
+    }
+    .quality-text {
+        margin-left: 20px;
     }
 }
 @media (max-width: 890px) {
@@ -1251,6 +1272,38 @@ p {
         aspect-ratio: 1/1;
     }
 }
+@media (max-width: 770px) {
+    .quality-description__container {
+        margin: 0 20px;
+    }
+    .quality-row2 {
+        display: none;
+    }
+    .quality-text {
+        margin-left: 0;
+    }
+    .quality-row {
+        margin-right: 20px;
+    }
+    .quality-text {
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 500px) {
+    .quality-description__container {
+        margin: 0;
+    }
+    .quality-description__title {
+        margin-bottom: 20px;
+    }
+    .quality-description__subtitle {
+        margin-bottom: 20px;
+    }
+    .quality-row-text {
+        padding-bottom: 10px;
+    }
+}
+
 /*---------------------Quality description--------------*/
 
 /*---------------------Job description--------------*/
@@ -1358,11 +1411,12 @@ p {
         max-width: 500px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .job-description__container {
       display: flex;
       flex-direction: column;
       align-items: start;
+      margin: 0 20px;
     }
     .job-description__container > div:first-child {
       position: static;
@@ -1381,93 +1435,21 @@ p {
   }
   .job-description__title {
     margin-bottom: 20px;
-}
-.job-description__subtitle{
-    margin-bottom: 20px;
-}
-.job-description-text {
-    margin-bottom: 20px;
-}
-}
-  
-  
-  
-  
-
-@media (max-width: 576px) {
-}
-
-
-/* @media (max-width: 1300px) {
-    .job-description {
-        padding: 40px 20px;
-    }
-    .job-description__title {
-
-        margin-bottom: 35px;
-    }
-    .job-description__subtitle {
-
-        margin-bottom: 30px;
-    }
-    .sublist_number h3 {
-        margin: 12px 0;
-    }
-}
-
-@media (max-width: 1168px) {
-    .job-description__title br,
-    .sublist_number h3 br {
-        display: none;
-    }
-    .job-description-image {
-         position: relative;
-        right: 0;
-        margin-bottom: 50px;
-        margin-left: 170px;
-    }
-}
-@media (max-width: 768px) {
-    .job-description__title br,
-    .sublist_number h3 br {
-        display: none;
-    }
-    .job-description-image {
-        position: relative;
-        margin-left: 85px;
-        margin-bottom: 50px;
-    }
-    .job-description{
-        margin-top: 30px;
-    }
-}
-
-@media (max-width: 576px) {
-    .job-description__container {
-        display: flex;
-        flex-direction: column;
-        gap: 600px;
-    }
-    .job-description-image {
-        display: none;
     }
     .job-description__subtitle{
-        background-image: url("../lib/job_description.png");
+        margin-bottom: 20px;
     }
-    .job-description__title,
-    .job-description__subtitle,
-    .job-description-content-text {
-        order: 0;
-        width: 100%;
-        padding-bottom: 8px;
+    .job-description-text {
+        margin-bottom: 20px;
     }
-    .job-description__wrapper {
-        padding: 20px 15px;
+}
+
+@media (max-width: 500px) {
+    .job-description__container {
+      margin: 0;
     }
-    .job-description__title{
-        padding-top: 30px;
-    }
-} */
+}
+
 
 /*---------------------Job description--------------*/
 
@@ -1507,35 +1489,53 @@ p {
 
 @media (max-width: 1300px){
     .fin-operation__subtitle {
-        margin-left: 50px;
-    }
-}
-@media (max-width: 1030px) {
-    .operation-links {
-        padding-left: 2px;
+        margin-left: 0;
     }
     .fin-operation__title {
-        margin-left: 10px;
+        margin-left: 0;
+    }
+    .fin-operation__container {
+        margin: 0 50px;
+    }
+}
+@media (max-width: 1045px) {
+    .fin-operation__container {
+        margin: 0;
+        padding-top: 200px;
+    }
+    .fin-operation__title br {
+        display: none;
     }
     .operation__link,.fin-operation__subtitle{
         font-size: 18px;
-        margin-left: 3px;
+    }
+    .operation-links {
+        padding-left: 0;
+        max-width: 100%;
+    }
+    .fin-operation__subtitle {
+        margin-bottom: 30px;
+    }
+    .fin-operation {
+        background-image: url(../lib/waveCurve-middle.svg);
+        height: 719px;
     }
 }
 @media (max-width: 780px) {
-    .fin-operation__subtitle{
-        margin-left: 10px;
-    }
-    .operation-links{
-        margin-left: 10px;
+    .fin-operation__container {
+        margin: 0 20px;
     }
     .operation__link,.fin-operation__subtitle{
         font-size: 16px;
     }
 }
-@media (max-width: 480px) {
-    .fin-operation{
-        height: 1210px;
+@media (max-width: 500px) {
+    .fin-operation {
+        background-image: url(../lib/fin-operation-waveCurve-small.svg);
+        height: 1000px;
+    }
+    .fin-operation__container {
+        margin: 0;
     }
 }
 
@@ -1551,15 +1551,10 @@ p {
 }
 
 .logic-cards {
-    position: relative;
-    max-width: 1400px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 413px 214px 497px;
-    gap: 25px;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 20px;
+  box-sizing: border-box;
 }
 
 .logic-card {
@@ -1573,65 +1568,47 @@ p {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    height: 100%;
+    width: 100%;
 }
 
 .logic-content-row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
     height: 100%;
 }
 
-.logic-card1,
-.logic-card2,
-.logic-card3,
-.logic-card4,
-.logic-card5 {
-    width: auto !important;
-}
 
 .logic-card1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    height: 413px;
 }
 
 .logic-card2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    height: 413px;
-}
-
-.logic-card1 img {
-    height: 412px;
 }
 
 .logic-card3 {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    height: 214px;
 }
 
 .logic-card4 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    height: 497px;
 }
 
 .logic-card5 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    height: 497px;
 }
 
-.logic-card5 img {
-    height: 495px;
-}
 
 .logic_image {
-    width: auto;
-    height: auto;
+    max-width: 100%; 
+    width: 1000px;
     object-fit: contain;
     border-radius: 25px;
     filter: grayscale(100%) brightness(0.7);
@@ -1656,122 +1633,74 @@ p {
     list-style-type: disc;
 }
 
-/* Адаптация для 1300px и меньше */
+@media (max-width: 1430px) {
+    
+}
+
 @media (max-width: 1300px) {
     .logistics__title {
         margin-bottom: 50px;
-        font-size: 2.2rem; /* Уменьшаем размер шрифта */
-    }
-    
+        font-size: 2.2rem;
+    }    
     .logistics__subtitle {
         margin-bottom: 50px;
         font-size: 1.3rem;
     }
-    
     .logic-cards {
-        gap: 20px; /* Уменьшаем промежутки */
-        padding: 0 30px; /* Добавляем боковые отступы */
-    }
-    
-    /* Адаптируем высоты карточек */
+        gap: 20px;
+        padding: 0 30px;
+    }    
     .logic-card1,
     .logic-card2 {
-        height: 380px; /* Уменьшаем на 33px */
-    }
-    
+        height: 380px; 
+    }    
     .logic-card3 {
-        height: 190px; /* Уменьшаем на 24px */
-    }
-    
+        height: 190px;
+    }    
     .logic-card4,
     .logic-card5 {
-        height: 450px; /* Уменьшаем на 47px */
+        height: 450px; 
     }
-    
-    /* Адаптация изображений */
     .logic-card1 img {
-        height: 379px; /* Соответственно уменьшаем */
-    }
-    
+        height: 379px; 
+    }    
     .logic-card5 img {
         height: 448px;
-    }
-    
+    }    
     .logic-content-text {
-        padding: 25px; /* Уменьшаем внутренние отступы */
-    }
-    
+        padding: 25px; 
+    }    
     .logistics-delivery-text {
         margin-bottom: 20px;
-    }
-    
+    }    
     .sublist {
         padding-left: 25px;
     }
 }
 
-/* Дополнительно для узких экранов (1100px и меньше) */
 @media (max-width: 1100px) {
     .logic-card1,
     .logic-card2 {
         height: 350px;
-    }
-    
+    }    
     .logic-card3 {
         height: 170px;
-    }
-    
+    }    
     .logic-card4,
     .logic-card5 {
         height: 400px;
-    }
-    
+    }    
     .logic-card1 img {
         height: 349px;
-    }
-    
+    }    
     .logic-card5 img {
         height: 398px;
-    }
-    
+    }    
     .logic-content-text {
         padding: 20px;
     }
 }
 
-/* Все остальные стили остаются без изменений */
-.logic-card {
-    border: 1px solid black;
-    border-radius: 25px;
-    transition: transform 0.3s ease;
-}
-
-.logic-content-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.logic-content-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100%;
-}
-
-.logic_image {
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 25px;
-    filter: grayscale(100%) brightness(0.7);
-    transition: all 0.3s ease;
-}
-
-.logic-card:hover .logic_image {
-    filter: grayscale(0%) brightness(1);
-}
 @media (max-width: 860px) {
     .logistics__title {
         margin-bottom: 30px;
@@ -1831,7 +1760,6 @@ p {
     .logic-cards {
         gap: 10px;
     }
-
     .logic-card {
         border-radius: 26px;
     }
