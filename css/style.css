@@ -116,6 +116,7 @@ p {
 .fix-btn{
     position: fixed;
     bottom: 100px;
+    border: 1px solid white;
     right: 50px;
     display: flex;
     flex-direction: row;
@@ -728,7 +729,7 @@ p {
 }
 @media (max-width: 570px) {
     .fix-btn {
-        right: 5px;
+        right: 20px;
         bottom: 50px;
     }
     .fix-btn img{
@@ -736,7 +737,7 @@ p {
         height: 53px;
     }
     .fix-info{
-        right: 5px;
+        right: 20px;
         bottom: 50px;
         padding: 7px 70px 7px 10px;
     }
@@ -1956,7 +1957,6 @@ p {
 @media (max-width: 868px) {
     .portfolio__title {
         margin-bottom: 30px;
-        font-size: 1.8rem;
     }
     .portfolio-cards {
         grid-template-columns: 1fr; 
@@ -1991,7 +1991,6 @@ p {
 @media (max-width: 600px) {
     .portfolio__title {
         margin-bottom: 25px;
-        font-size: 1.5rem;
     }
     .portfolio-cards {
         gap: 20px;
@@ -2005,9 +2004,6 @@ p {
 }
 
 @media (max-width: 500px) {
-    .portfolio__title {
-        font-size: 1.3rem;
-    }
     .portfolio-card2 {
         padding: 10px;
     }
@@ -2025,9 +2021,6 @@ p {
 }
 
 @media (max-width: 400px) {
-    .portfolio__title {
-        font-size: 1.3rem;
-    }
     .portfolio-card2 {
         padding: 10px;
     }
