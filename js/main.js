@@ -1,34 +1,68 @@
 //form
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    const checkbox = this.querySelector('input[name="agreement"]');
-    const inputs = this.querySelectorAll('input, textarea');
-    // Проверка заполнения всех полей
-    let isValid = true;
-    inputs.forEach(input => {
-        if (!input.checkValidity()) {
-            input.classList.add('invalid');
-            isValid = false;
-        }
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.contact-form');
+  const notice = document.getElementById('submit-notice');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); // отменяем стандартный переход при submit :contentReference[oaicite:4]{index=4}
+
+    // Валидация полей
+    const checkbox = form.querySelector('input[name="agreement"]');
+    const inputs = form.querySelectorAll('input, textarea');
+    let valid = true;
+    inputs.forEach(el => {
+      if (!el.checkValidity()) {
+        el.classList.add('invalid');
+        valid = false;
+      }
     });
-    // Проверка чекбокса
     if (!checkbox.checked) {
-        checkbox.closest('.agreement').classList.add('invalid');
-        isValid = false;
-    }    
-    if (!isValid) {
-        e.preventDefault();
-        alert('Пожалуйста, заполните все поля и подтвердите соглашение');
+      checkbox.closest('.agreement').classList.add('invalid');
+      valid = false;
     }
-});
-// Добавляем обработчики для сброса стилей ошибок
-document.querySelectorAll('input, textarea').forEach(el => {
-    el.addEventListener('input', () => {
-        el.classList.remove('invalid');
-        if(el.name === 'agreement') {
-            el.closest('.agreement').classList.remove('invalid');
-        }
+    if (!valid) {
+      alert('Пожалуйста, заполните все поля и подтвердите соглашение');
+      return;
+    }
+
+    // Сбор данных формы в FormData :contentReference[oaicite:5]{index=5}
+    const data = new FormData(form);
+
+    // Отправка через Fetch API :contentReference[oaicite:6]{index=6}
+    fetch(form.action, {
+      method: 'POST',
+      body: data
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Сервер вернул ${response.status}`);
+      }
+      return response.text(); // ожидаем текстовый ответ от PHP
+    })
+    .then(text => {
+      // Показать сообщение в контейнере и очистить форму
+      notice.textContent = text;
+      notice.classList.add('notice-success');
+      form.reset();
+    })
+    .catch(err => {
+      notice.textContent = 'Ошибка отправки: ' + err.message;
+      notice.classList.add('notice-error');
+      console.error(err);
     });
+  });
+
+  // Сброс ошибок при изменении полей
+  document.querySelectorAll('input, textarea').forEach(el => {
+    el.addEventListener('input', () => {
+      el.classList.remove('invalid');
+      if (el.name === 'agreement') {
+        el.closest('.agreement').classList.remove('invalid');
+      }
+    });
+  });
 });
+
 
 //burger-menu
 const menu = document.querySelector(".burger-header");

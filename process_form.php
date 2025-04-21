@@ -27,8 +27,8 @@ try {
 
     // 5. Проверка метода запроса: только POST
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        header('Location: index.html');
-        exit;
+        http_response_code(405);
+        exit('Метод не разрешён');
     }
 
     // 6. Считываем данные из формы
