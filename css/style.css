@@ -914,6 +914,14 @@ p {
     .help-title {
         margin-left: 0;
     }
+    .cube-image {
+        filter: grayscale(0%) brightness(1);
+        transition: all 0.3s ease;
+    }
+    
+    .cube:hover .cube-image {
+        filter: grayscale(0%) brightness(1);
+    }
 }
 @media (max-width: 765px) {
     .help__content {
@@ -1100,6 +1108,9 @@ p {
     }
     .extra--help__container {
         margin: 0;
+    }
+    .extra_image {
+        filter: grayscale(0%) brightness(1);
     }
 }
 @media (max-width: 900px) {
@@ -1756,7 +1767,6 @@ p {
     grid-row: 3 / 4;
 }
 
-
 .logic_image {
     max-width: 100%; 
     max-height: 100%;
@@ -1771,8 +1781,6 @@ p {
 .logic-card:hover .logic_image {
     filter: grayscale(0%) brightness(1); /* Цветное при наведении на десктопе */
 }
-
-
 
 .logic-content-text {
     padding: 30px;
@@ -1797,8 +1805,6 @@ p {
     max-width: 403px;
     height: 498px;
 }
-
-
 
 @media (max-width: 1300px) {
     .logistics__title {
@@ -1827,13 +1833,15 @@ p {
     }
     .logistics__container {
         margin: 0 50px;
-    }
-   
+    }   
     .logic-card {
         border-radius: 50px;
     }
     .logic-content-row-card5 img {        
         height: 398px;
+    }
+    .logic_image {
+        border-radius: 50px;
     }
 }
 
@@ -1855,6 +1863,9 @@ p {
     }
     .logistics__container {
         margin: 0;
+    }
+    .logic_image {
+        filter: grayscale(0%) brightness(1); /* Ч/б с затемнением для десктопа */
     }
 }
 
@@ -1927,7 +1938,6 @@ p {
     .logic-cards {
         gap: 10px;
     }
-
     .logic-card {
         border-radius: 26px;
     }
@@ -1937,8 +1947,8 @@ p {
     .logic-content-text {
         padding: 10px;
     }
-    .logic-card:hover .logic_image {
-        filter: grayscale(0%) brightness(1);
+    .logic_image {
+        border-radius: 25px;
     }
 }
 
@@ -2874,7 +2884,6 @@ p {
 
 .question__accordion__item {
     padding: 0 30px;
-    padding-bottom: 20px;
     border-radius: 74px;
     border: 1px solid #000000;
     margin-bottom: 30px;
