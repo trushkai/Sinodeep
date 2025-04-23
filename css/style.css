@@ -1434,9 +1434,7 @@ p {
     .quality-text {
         padding: 15px 20px;
     }
-        .quality-row4 {
-            display: none;
-        }
+       
 }
 @media (max-width: 500px) {
     .quality-description__container {
@@ -1450,6 +1448,9 @@ p {
     }
     .quality-row-text {
         padding-bottom: 10px;
+    }
+    .quality-row4 {
+        display: none;
     }
 }
 
@@ -2735,7 +2736,7 @@ p {
     }
     .form {
         background-image: url(../lib/waveCurve-small.svg);
-        height: 1300px;
+        height: 1400px;
     }
     .form__content {
         padding-top: 200px;
